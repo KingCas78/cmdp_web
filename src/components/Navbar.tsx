@@ -15,7 +15,7 @@ export default function Navbar() {
     { label: 'Galería', href: '/galeria' },
     { label: 'Blog', href: '/blog' },
     { label: 'Contacto', href: '/contacto' },
-    { label: 'CNDP', href: '/cndp' }
+    { label: 'Congreso Nacional', href: '/cndp' }
   ]
 
   return (

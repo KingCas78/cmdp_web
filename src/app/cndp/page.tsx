@@ -7,7 +7,7 @@ export default function CNDP() {
       <div className="bg-gradient-to-r from-cyan-600 to-cyan-800 text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">CNDP</h1>
-          <p className="text-cyan-100 mt-2">Cámara Nacional de la Industria Privada</p>
+          <p className="text-cyan-100 mt-2">Congreso Nacional de Dermatología Pediátrica 2026</p>
         </div>
       </div>
 
@@ -121,9 +121,9 @@ export default function CNDP() {
             </button>
           </div>
 
-          {/* Contacto CNDP */}
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Contacto CNDP</h2>
+          {/* Contacto Congreso Nacional */}
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Contacto Congreso Nacional</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">📱 Teléfono</h3>

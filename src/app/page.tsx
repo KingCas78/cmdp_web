@@ -8,7 +8,7 @@ export default function Home() {
     { nombre: 'Galería', href: '/galeria', icon: '📷' },
     { nombre: 'Blog', href: '/blog', icon: '📝' },
     { nombre: 'Contacto', href: '/contacto', icon: '✉️' },
-    { nombre: 'CNDP', href: '/cndp', icon: '🏢' }
+    { nombre: 'Congreso Nacional', href: '/cndp', icon: '🏢' }
   ]
 
   return (

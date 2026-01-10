@@ -34,7 +34,7 @@ export default function Footer() {
               <li><Link href="/estatutos" className="hover:text-blue-400">Estatutos</Link></li>
               <li><Link href="/estatutos" className="hover:text-blue-400">Política de Privacidad</Link></li>
               <li><Link href="/estatutos" className="hover:text-blue-400">Código de Ética</Link></li>
-              <li><Link href="/cndp" className="hover:text-blue-400">CNDP</Link></li>
+              <li><Link href="/cndp" className="hover:text-blue-400">Congreso Nacional</Link></li>
             </ul>
           </div>
 
