@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CMDP - Cámara Nacional de la Iniciativa Privada",
-  description: "Bienvenido a CMDP. La principal organización gremial empresarial de Venezuela.",
+  title: "CMDP - Colegio Mexicano de Dermatología Pediátrica",
+  description: "Bienvenido al CMDP.",
 };
 
 export default function RootLayout({
