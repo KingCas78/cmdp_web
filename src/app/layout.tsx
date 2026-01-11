@@ -36,3 +36,4 @@ export default function RootLayout({
     </html>
   );
 }
+// Update timestamp: do., 11 de ene. de 2026 14:27:46
