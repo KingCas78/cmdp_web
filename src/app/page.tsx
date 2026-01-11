@@ -16,9 +16,9 @@ export default function Home() {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">Bienvenidos al CMDP</h1>
+          <h1 className="text-5xl font-bold mb-4">CMDP - Excelencia en Dermatología Pediátrica</h1>
           <p className="text-xl text-blue-100">
-            El Colegio Mexicano de Dermatología Pediátrica A.C. es la asociación líder en México para dermatólogos pediatras, dedicada a la educación, investigación y excelencia clínica.
+            La asociación líder en México dedicada a la formación, investigación y excelencia clínica de dermatólogos pediatras. Únete a nuestra comunidad de expertos.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <a
