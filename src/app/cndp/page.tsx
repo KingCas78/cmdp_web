@@ -17,12 +17,10 @@ export default function CNDP() {
         <div className="bg-white rounded-lg shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Bienvenida</h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            La Cámara Nacional de la Industria Privada es la principal organización gremial 
-            que agrupa a los empresarios, productores, industriales y comerciantes del país.
+            El Colegio Mexicano de Dermatología Pediátrica A.C. (CMDP) es una asociación civil sin fines de lucro que agrupa a los dermatólogos pediatras más destacados de México. 
           </p>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Desde su fundación, trabaja incansablemente en la defensa de los intereses empresariales 
-            y en la promoción del desarrollo económico nacional.
+           Desde su fundación en 1995, el CMDP se ha dedicado a promover la excelencia en la atención dermatológica infantil, fomentar la investigación científica y ofrecer educación continua a sus miembros y a la comunidad médica en general.
           </p>
         </div>
 
@@ -33,8 +31,9 @@ export default function CNDP() {
             <div className="text-4xl mb-4">🎯</div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Misión</h3>
             <p className="text-gray-600">
-              Defender y promover los intereses de la iniciativa privada, 
-              contribuyendo al desarrollo económico y social del país.
+              Promover la educación médica continua en la dermatología pediátrica, 
+              fomentar la investigación científica y representar a los dermatólogos 
+              pediatras en México.
             </p>
           </div>
 
