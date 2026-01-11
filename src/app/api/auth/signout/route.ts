@@ -3,6 +3,13 @@ import { supabase } from '@/lib/supabase'
 
 export async function POST() {
   try {
+    if (!supabase) {
+      return NextResponse.json(
+        { error: 'Authentication service not configured' },
+        { status: 503 }
+      )
+    }
+
     const { error } = await supabase.auth.signOut()
 
     if (error) {

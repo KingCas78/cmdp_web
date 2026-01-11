@@ -17,8 +17,10 @@ export function useAuth() {
 
     const getSession = async () => {
       try {
-        const { data, error } = await supabase.auth.getSession()
-        setUser(data?.session?.user || null)
+        if (supabase) {
+          const { data, error } = await supabase.auth.getSession()
+          setUser(data?.session?.user || null)
+        }
         setLoading(false)
       } catch (error) {
         setLoading(false)
@@ -27,13 +29,15 @@ export function useAuth() {
 
     getSession()
 
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user || null)
-    })
+    if (supabase) {
+      const {
+        data: { subscription },
+      } = supabase.auth.onAuthStateChange((_event, session) => {
+        setUser(session?.user || null)
+      })
 
-    return () => subscription?.unsubscribe()
+      return () => subscription?.unsubscribe()
+    }
   }, [])
 
   const signUp = async (email: string, password: string) => {
