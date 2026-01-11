@@ -16,9 +16,9 @@ export default function Home() {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">Bienvenido a CMDP</h1>
+          <h1 className="text-5xl font-bold mb-4">Bienvenidos al CMDP</h1>
           <p className="text-xl text-blue-100">
-            Cámara Nacional de la Iniciativa Privada - Venezuela
+            El Colegio Mexicano de Dermatología Pediátrica A.C. es la asociación líder en México para dermatólogos pediatras, dedicada a la educación, investigación y excelencia clínica.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <a
@@ -73,21 +73,21 @@ export default function Home() {
               <div className="text-5xl mb-4">🎓</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Capacitación Continua</h3>
               <p className="text-gray-600">
-                Acceso a webinars, talleres y conferencias con expertos de la industria.
+                Acceso a webinars, talleres y conferencias con expertos en dermatología pediátrica.
               </p>
             </div>
             <div className="text-center">
               <div className="text-5xl mb-4">🤝</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Networking</h3>
               <p className="text-gray-600">
-                Conecta con otros empresarios y profesionales en eventos exclusivos.
+                Conecta con otros dermatólogos pediatras y profesionales del sector.
               </p>
             </div>
             <div className="text-center">
               <div className="text-5xl mb-4">📊</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Información Estratégica</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Comunidad médica dermatológica</h3>
               <p className="text-gray-600">
-                Acceso a análisis, reportes y actualizaciones del sector.
+                Actualizaciones constantes sobre avances y tendencias en dermatología pediátrica.
               </p>
             </div>
           </div>
@@ -103,9 +103,9 @@ export default function Home() {
             <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-3">
               Webinar
             </span>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Gobernanza y Liderazgo</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Conferencias magistrales y clases destacadas</h3>
             <p className="text-gray-600 text-sm mb-4">
-              Aprende sobre los principios de gobernanza corporativa
+             Explora nuestras conferencias magistrales y clases destacadas impartidas por expertos en dermatología pediátrica.
             </p>
             <p className="text-gray-500 text-xs">15 de Enero - 10:00 AM</p>
           </div>
@@ -114,9 +114,9 @@ export default function Home() {
             <span className="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-3">
               Galería
             </span>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Evento de Gala 2025</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Congresos Nacionales de Dermatología Pediátrica</h3>
             <p className="text-gray-600 text-sm mb-4">
-              Revive los momentos especiales de nuestro aniversario
+              Revive los momentos especiales de los últimos congresos
             </p>
             <p className="text-gray-500 text-xs">Noviembre 2025</p>
           </div>
@@ -125,7 +125,7 @@ export default function Home() {
             <span className="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold mb-3">
               Artículo
             </span>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">El Futuro del Liderazgo</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Próximos Avances en Dermatología Pediátrica</h3>
             <p className="text-gray-600 text-sm mb-4">
               Exploramos las tendencias que definirán el próximo cambio
             </p>
@@ -139,13 +139,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">¿Listo para formar parte?</h2>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-            Únete a cientos de empresarios y profesionales que ya confían en CMDP
+            Únete al Colegio Mexicano de Dermatología Pediátrica A.C. y accede a recursos exclusivos, eventos y una comunidad dedicada a la excelencia en dermatología pediátrica.
           </p>
           <a
             href="/contacto"
             className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 font-semibold transition-colors"
           >
-            Solicitar Membresía
+            Solicita tu ingreso hoy
           </a>
         </div>
       </div>

@@ -42,8 +42,8 @@ export default function CNDP() {
             <div className="text-4xl mb-4">👁️</div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Visión</h3>
             <p className="text-gray-600">
-              Ser la institución más relevante y representativa del sector empresarial, 
-              influyente en las decisiones de política económica nacional.
+              Ser una asociación líder en dermatología pediátrica a nivel nacional e internacional, 
+              reconocida por su excelencia en educación, investigación y atención clínica.
             </p>
           </div>
 
@@ -52,8 +52,8 @@ export default function CNDP() {
             <div className="text-4xl mb-4">✨</div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Valores</h3>
             <p className="text-gray-600">
-              Integridad, transparencia, responsabilidad social y compromiso 
-              con el desarrollo sostenible.
+             Integridad, excelencia, colaboración, innovación y compromiso con la salud 
+             dermatológica infantil.
             </p>
           </div>
         </div>
