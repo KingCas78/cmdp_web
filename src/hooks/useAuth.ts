@@ -10,10 +10,19 @@ export function useAuth() {
   const router = useRouter()
 
   useEffect(() => {
-    const getSession = async () => {
-      const { data, error } = await supabase.auth.getSession()
-      setUser(data?.session?.user || null)
+    if (!supabase) {
       setLoading(false)
+      return
+    }
+
+    const getSession = async () => {
+      try {
+        const { data, error } = await supabase.auth.getSession()
+        setUser(data?.session?.user || null)
+        setLoading(false)
+      } catch (error) {
+        setLoading(false)
+      }
     }
 
     getSession()
@@ -28,6 +37,7 @@ export function useAuth() {
   }, [])
 
   const signUp = async (email: string, password: string) => {
+    if (!supabase) throw new Error('Supabase not configured')
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
@@ -37,6 +47,7 @@ export function useAuth() {
   }
 
   const signIn = async (email: string, password: string) => {
+    if (!supabase) throw new Error('Supabase not configured')
     const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
@@ -46,6 +57,7 @@ export function useAuth() {
   }
 
   const signOut = async () => {
+    if (!supabase) throw new Error('Supabase not configured')
     const { error } = await supabase.auth.signOut()
     if (error) throw error
     router.push('/')
