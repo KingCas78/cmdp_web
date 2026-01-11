@@ -1,14 +1,18 @@
+'use client'
+
+import Image from 'next/image'
+
 export default function Home() {
   const seccionesNav = [
-    { nombre: 'Inicio', href: '/', icon: '🏠' },
-    { nombre: 'Webinars', href: '/webinars', icon: '📺' },
-    { nombre: 'Mesa Directiva', href: '/mesa-directiva', icon: '👥' },
-    { nombre: 'Videoteca', href: '/videoteca', icon: '🎥' },
-    { nombre: 'Estatutos', href: '/estatutos', icon: '📄' },
-    { nombre: 'Galería', href: '/galeria', icon: '📷' },
-    { nombre: 'Blog', href: '/blog', icon: '📝' },
-    { nombre: 'Contacto', href: '/contacto', icon: '✉️' },
-    { nombre: 'Congreso Nacional', href: '/cndp', icon: '🏢' }
+    { nombre: 'Inicio', href: '/', imagen: '/images/inicio.svg' },
+    { nombre: 'Webinars', href: '/webinars', imagen: '/images/webinars.svg' },
+    { nombre: 'Mesa Directiva', href: '/mesa-directiva', imagen: '/images/mesa-directiva.svg' },
+    { nombre: 'Videoteca', href: '/videoteca', imagen: '/images/videoteca.svg' },
+    { nombre: 'Estatutos', href: '/estatutos', imagen: '/images/estatutos.svg' },
+    { nombre: 'Galería', href: '/galeria', imagen: '/images/galeria.svg' },
+    { nombre: 'Blog', href: '/blog', imagen: '/images/blog.svg' },
+    { nombre: 'Contacto', href: '/contacto', imagen: '/images/contacto.svg' },
+    { nombre: 'Congreso Nacional', href: '/cndp', imagen: '/images/cndp.svg' }
   ]
 
   return (
@@ -51,7 +55,14 @@ export default function Home() {
               href={seccion.href}
               className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all hover:-translate-y-2 p-6 block group"
             >
-              <div className="text-5xl mb-4">{seccion.icon}</div>
+              <div className="relative w-full h-40 mb-4">
+                <Image
+                  src={seccion.imagen}
+                  alt={seccion.nombre}
+                  fill
+                  className="object-contain"
+                />
+              </div>
               <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                 {seccion.nombre}
               </h3>
