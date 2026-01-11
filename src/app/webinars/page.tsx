@@ -4,29 +4,38 @@ export default function Webinars() {
   const webinars = [
     {
       id: 1,
-      titulo: 'Webinar: Gobernanza y Liderazgo',
+      titulo: 'Webinar: Dermatología Pediátrica - Casos Clínicos',
       fecha: '15 de Enero 2026',
       hora: '10:00 AM',
-      descripcion: 'Aprende sobre los principios de gobernanza corporativa y liderazgo efectivo.',
-      disertante: 'Dr. Juan Pérez',
+      descripcion: 'Presentación de casos clínicos complejos en dermatología pediátrica y su manejo.',
+      disertante: 'Dra. Rosa Martínez',
       estado: 'Próximo'
     },
     {
       id: 2,
-      titulo: 'Webinar: Innovación Empresarial',
+      titulo: 'Webinar: Novedades en Tratamientos Biológicos',
       fecha: '22 de Enero 2026',
       hora: '2:00 PM',
-      descripcion: 'Estrategias de innovación para empresas en crecimiento.',
-      disertante: 'Ing. María García',
+      descripcion: 'Uso de terapias biológicas en dermatología pediátrica: indicaciones y resultados.',
+      disertante: 'Dr. Miguel Ángel García',
       estado: 'Próximo'
     },
     {
       id: 3,
-      titulo: 'Webinar: Transformación Digital',
-      fecha: '8 de Enero 2026',
+      titulo: 'Webinar: Seguridad Dermatológica en Menores',
+      fecha: '29 de Enero 2026',
       hora: '11:00 AM',
-      descripcion: 'Cómo adaptar tu empresa a la era digital.',
-      disertante: 'Lic. Carlos López',
+      descripcion: 'Consideraciones especiales de seguridad en el tratamiento dermatológico pediátrico.',
+      disertante: 'Dra. Alejandra Ruiz',
+      estado: 'Próximo'
+    },
+    {
+      id: 4,
+      titulo: 'Webinar: Psicosomática en Dermatología Infantil',
+      fecha: '8 de Enero 2026',
+      hora: '3:00 PM',
+      descripcion: 'Impacto psicológico de las enfermedades dermatológicas en niños y adolescentes.',
+      disertante: 'Dr. Carlos López',
       estado: 'Registrado'
     }
   ]

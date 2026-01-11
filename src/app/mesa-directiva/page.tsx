@@ -4,51 +4,57 @@ export default function MesaDirectiva() {
   const miembros = [
     {
       id: 1,
-      nombre: 'Ing. Roberto García',
-      cargo: 'Presidente',
-      empresa: 'Innovatech S.A.',
-      bio: 'Líder empresarial con 20 años de experiencia',
-      foto: '👨‍💼'
+      nombre: 'Dra. Rosa María Martínez López',
+      cargo: 'Presidenta',
+      especialidad: 'Dermatología Pediátrica',
+      institucion: 'Instituto Nacional de Pediatría',
+      bio: 'Especialista con 25 años de experiencia en dermatología pediátrica',
+      foto: '👩‍⚕️'
     },
     {
       id: 2,
-      nombre: 'Lic. Patricia Rodríguez',
-      cargo: 'Vicepresidenta',
-      empresa: 'Solutions Corp',
-      bio: 'Especialista en estrategia empresarial',
-      foto: '👩‍💼'
+      nombre: 'Dr. Carlos Alberto García Ruiz',
+      cargo: 'Vicepresidente',
+      especialidad: 'Dermatología Pediátrica',
+      institucion: 'Hospital Infantil de México',
+      bio: 'Líder en investigación de dermatitis atópica pediátrica',
+      foto: '👨‍⚕️'
     },
     {
       id: 3,
-      nombre: 'Dr. Francisco López',
-      cargo: 'Tesorero',
-      empresa: 'Finance Global',
-      bio: 'Experto en finanzas corporativas',
-      foto: '👨‍💼'
+      nombre: 'Dra. Alejandra Ruiz Sánchez',
+      cargo: 'Secretaria',
+      especialidad: 'Dermatología Pediátrica',
+      institucion: 'UNAM - Facultad de Medicina',
+      bio: 'Docente y investigadora en oncología dermatológica pediátrica',
+      foto: '👩‍⚕️'
     },
     {
       id: 4,
-      nombre: 'Arq. Sandra Martínez',
-      cargo: 'Secretaria',
-      empresa: 'Design Studio',
-      bio: 'Especialista en desarrollo empresarial',
-      foto: '👩‍💼'
+      nombre: 'Dr. Miguel Ángel Torres Navarro',
+      cargo: 'Tesorero',
+      especialidad: 'Dermatología Pediátrica',
+      institucion: 'Clínica Dermatológica México',
+      bio: 'Especialista en dermatología cosmética pediátrica',
+      foto: '👨‍⚕️'
     },
     {
       id: 5,
-      nombre: 'Ing. Manuel Flores',
+      nombre: 'Dra. Patricia González López',
       cargo: 'Vocal 1',
-      empresa: 'Tech Ventures',
-      bio: 'Emprendedor y visionario tecnológico',
-      foto: '👨‍💼'
+      especialidad: 'Dermatología Pediátrica',
+      institucion: 'Hospital Regional Pediátrico',
+      bio: 'Experta en infecciones dermatológicas pediátricas',
+      foto: '👩‍⚕️'
     },
     {
       id: 6,
-      nombre: 'Lic. Elena Díaz',
+      nombre: 'Dr. Fernando López Ruiz',
       cargo: 'Vocal 2',
-      empresa: 'Consulting Plus',
-      bio: 'Consultora empresarial de renombre',
-      foto: '👩‍💼'
+      especialidad: 'Dermatología Pediátrica',
+      institucion: 'Centro Médico Dermatológico',
+      bio: 'Investigador en nuevas terapias dermatológicas',
+      foto: '👨‍⚕️'
     }
   ]
 
@@ -79,7 +85,8 @@ export default function MesaDirectiva() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">{miembro.nombre}</h3>
                 <p className="text-purple-600 font-semibold mt-1">{miembro.cargo}</p>
-                <p className="text-gray-600 text-sm mt-1">{miembro.empresa}</p>
+                <p className="text-gray-600 text-sm mt-1">{miembro.institucion}</p>
+                <p className="text-gray-600 text-xs mt-1">{miembro.especialidad}</p>
                 <p className="text-gray-600 mt-4">{miembro.bio}</p>
                 
                 <div className="mt-6 flex gap-2 justify-center">

@@ -8,75 +8,65 @@ export default function Blog() {
   const articulos = [
     {
       id: 1,
-      titulo: 'El Futuro del Liderazgo Empresarial',
-      resumen: 'Exploramos las nuevas tendencias en liderazgo corporativo para la próxima década.',
-      autor: 'Dr. Juan García',
+      titulo: 'Avances en el Tratamiento de la Dermatitis Atópica Pediátrica',
+      resumen: 'Últimas investigaciones y protocolos de tratamiento para la dermatitis atópica en niños.',
+      autor: 'Dra. Rosa Martínez',
       fecha: 'Enero 10, 2026',
-      categoria: 'Liderazgo',
+      categoria: 'Dermatología',
       lecturaMin: '8 min',
-      imagen: '📝'
+      imagen: '🔬'
     },
     {
       id: 2,
-      titulo: 'Innovación Tecnológica en PYMES',
-      resumen: 'Cómo las pequeñas y medianas empresas pueden aprovechar la tecnología.',
-      autor: 'Ing. Carlos López',
+      titulo: 'Manejo de Acné en Adolescentes',
+      resumen: 'Estrategias terapéuticas y dermocosmética para el acné juvenil.',
+      autor: 'Dr. Carlos López',
       fecha: 'Enero 8, 2026',
-      categoria: 'Tecnología',
+      categoria: 'Acné',
       lecturaMin: '6 min',
-      imagen: '💻'
+      imagen: '💊'
     },
     {
       id: 3,
-      titulo: 'Sustentabilidad: Un Imperativo Empresarial',
-      resumen: 'La importancia de implementar prácticas sustentables en las organizaciones.',
-      autor: 'Lic. Patricia Rodríguez',
+      titulo: 'Infecciones Fúngicas en Pediatría: Diagnóstico y Tratamiento',
+      resumen: 'Abordaje clínico de las micosis más comunes en la población pediátrica.',
+      autor: 'Dr. Fernando González',
       fecha: 'Enero 5, 2026',
-      categoria: 'Sustentabilidad',
-      lecturaMin: '7 min',
-      imagen: '🌱'
+      categoria: 'Micología',
+      lecturaMin: '10 min',
+      imagen: '🦠'
     },
     {
       id: 4,
-      titulo: 'Transformación Digital: Guía Práctica',
-      resumen: 'Pasos concretos para comenzar el proceso de transformación digital.',
-      autor: 'Mg. Fernando Díaz',
-      fecha: 'Diciembre 30, 2025',
-      categoria: 'Digital',
-      lecturaMin: '9 min',
-      imagen: '📲'
+      titulo: 'Nevus y Lesiones Pigmentadas en Niños',
+      resumen: 'Diferenciación entre lesiones benignas y malignas, y criterios de seguimiento.',
+      autor: 'Dra. Alejandra Ruiz',
+      fecha: 'Enero 3, 2026',
+      categoria: 'Oncología',
+      lecturaMin: '7 min',
+      imagen: '🎯'
     },
     {
       id: 5,
-      titulo: 'Emprendimiento en la Era Pos Pandemia',
-      resumen: 'Oportunidades y desafíos para nuevos emprendimientos.',
-      autor: 'Lic. Elena Flores',
-      fecha: 'Diciembre 25, 2025',
-      categoria: 'Emprendimiento',
+      titulo: 'Dermatología Cosmética Pediátrica',
+      resumen: 'Procedimientos seguros y consideraciones éticas en la población pediátrica.',
+      autor: 'Dr. Miguel Torres',
+      fecha: 'Diciembre 28, 2025',
+      categoria: 'Cosmética',
       lecturaMin: '6 min',
-      imagen: '🚀'
-    },
-    {
-      id: 6,
-      titulo: 'Bienestar Laboral y Productividad',
-      resumen: 'Cómo el bienestar de los empleados impacta en la productividad empresarial.',
-      autor: 'Psic. Sandra Martínez',
-      fecha: 'Diciembre 20, 2025',
-      categoria: 'Recursos Humanos',
-      lecturaMin: '7 min',
-      imagen: '😊'
+      imagen: '✨'
     }
   ]
 
-  const categorias = ['Todos', 'Liderazgo', 'Tecnología', 'Sustentabilidad', 'Digital', 'Emprendimiento', 'Recursos Humanos']
+  const categorias = ['Todos', 'Dermatología', 'Acné', 'Micología', 'Oncología', 'Cosmética']
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h1 className="text-4xl font-bold">Blog</h1>
-          <p className="text-indigo-100 mt-2">Artículos, análisis y reflexiones sobre negocios</p>
+          <h1 className="text-4xl font-bold">Blog CMDP</h1>
+          <p className="text-indigo-100 mt-2">Artículos sobre dermatología pediátrica</p>
         </div>
       </div>
 

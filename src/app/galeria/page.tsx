@@ -8,66 +8,45 @@ export default function Galeria() {
   const fotos = [
     {
       id: 1,
-      titulo: 'Asamblea General 2025',
-      descripcion: 'Reunión anual de socios y directivos',
-      fecha: 'Enero 2026',
+      titulo: 'Congreso Nacional CMDP 2025',
+      descripcion: 'Asamblea general de dermatólogos pediatras de México',
+      fecha: 'Noviembre 2025',
       emoji: '👥'
     },
     {
       id: 2,
-      titulo: 'Conferencia Magistral',
-      descripcion: 'Experto internacional compartiendo conocimientos',
-      fecha: 'Diciembre 2025',
+      titulo: 'Conferencia Magistral: Dr. Internacional',
+      descripcion: 'Experto en dermatología pediátrica presentando últimas investigaciones',
+      fecha: 'Octubre 2025',
       emoji: '🎤'
     },
     {
       id: 3,
-      titulo: 'Taller de Capacitación',
-      descripcion: 'Sesión de aprendizaje práctico',
-      fecha: 'Diciembre 2025',
-      emoji: '📚'
+      titulo: 'Taller Práctico de Dermatoscopía',
+      descripcion: 'Sesión de capacitación en técnicas de diagnóstico dermatoscópico',
+      fecha: 'Septiembre 2025',
+      emoji: '🔍'
     },
     {
       id: 4,
-      titulo: 'Networking Empresarial',
-      descripcion: 'Encuentro de emprendedores y empresarios',
-      fecha: 'Noviembre 2025',
-      emoji: '🤝'
-    },
-    {
-      id: 5,
-      titulo: 'Evento de Gala',
-      descripcion: 'Celebración aniversario de la organización',
-      fecha: 'Noviembre 2025',
-      emoji: '🎉'
-    },
-    {
-      id: 6,
-      titulo: 'Visita Empresarial',
-      descripcion: 'Recorrida por instalaciones innovadoras',
-      fecha: 'Octubre 2025',
-      emoji: '🏢'
-    },
-    {
-      id: 7,
-      titulo: 'Workshop de Innovación',
-      descripcion: 'Taller sobre nuevas tecnologías',
-      fecha: 'Octubre 2025',
+      titulo: 'Mesa Redonda: Casos Clínicos Desafiantes',
+      descripcion: 'Discusión colaborativa entre especialistas sobre casos complejos',
+      fecha: 'Agosto 2025',
       emoji: '💡'
     },
     {
-      id: 8,
-      titulo: 'Panel de Discusión',
-      descripcion: 'Debate sobre tendencias del mercado',
-      fecha: 'Septiembre 2025',
-      emoji: '💬'
+      id: 5,
+      titulo: 'Ceremonia de Incorporación de Nuevos Miembros',
+      descripcion: 'Bienvenida a nuevos dermatólogos pediatras al colegio',
+      fecha: 'Julio 2025',
+      emoji: '🎓'
     },
     {
-      id: 9,
-      titulo: 'Actividad Social',
-      descripcion: 'Integración y confraternidad',
-      fecha: 'Septiembre 2025',
-      emoji: '🎊'
+      id: 6,
+      titulo: 'Taller de Dermocosmética Pediátrica',
+      descripcion: 'Productos y procedimientos seguros en menores',
+      fecha: 'Junio 2025',
+      emoji: '💄'
     }
   ]
 
