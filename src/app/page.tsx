@@ -5,14 +5,14 @@ import Image from 'next/image'
 export default function Home() {
   const seccionesNav = [
     { nombre: 'Inicio', href: '/', imagen: '/images/inicio.svg' },
-    { nombre: 'Webinars', href: '/webinars', imagen: '/images/webinars.svg' },
-    { nombre: 'Mesa Directiva', href: '/mesa-directiva', imagen: '/images/mesa-directiva.svg' },
-    { nombre: 'Videoteca', href: '/videoteca', imagen: '/images/videoteca.svg' },
+    { nombre: 'Webinars', href: '/webinars', imagen: '/images/webinars.png' },
+    { nombre: 'Mesa Directiva', href: '/mesa-directiva', imagen: '/images/mesa-directiva.png' },
+    { nombre: 'Videoteca', href: '/videoteca', imagen: '/images/videoteca.png' },
     { nombre: 'Estatutos', href: '/estatutos', imagen: '/images/estatutos.svg' },
     { nombre: 'Galería', href: '/galeria', imagen: '/images/galeria.svg' },
     { nombre: 'Blog', href: '/blog', imagen: '/images/blog.svg' },
     { nombre: 'Contacto', href: '/contacto', imagen: '/images/contacto.svg' },
-    { nombre: 'Congreso Nacional', href: '/cndp', imagen: '/images/cndp.svg' }
+    { nombre: 'Congreso Nacional', href: '/cndp', imagen: '/images/cndp.png' }
   ]
 
   return (
@@ -20,9 +20,9 @@ export default function Home() {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">CMDP - Excelencia en Dermatología Pediátrica</h1>
+          <h1 className="text-5xl font-bold mb-4">Bienvienidos</h1>
           <p className="text-xl text-blue-100">
-            La asociación líder en México dedicada a la formación, investigación y excelencia clínica de dermatólogos pediatras. Únete a nuestra comunidad de expertos.
+            Colegio Mexicano de Dermatología Pediátrica A.C. - Uniendo a los especialistas en dermatología pediátrica de México para promover la excelencia médica y el bienestar infantil.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <a
