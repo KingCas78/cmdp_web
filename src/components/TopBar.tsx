@@ -5,15 +5,23 @@ export default function TopBar() {
     <div className="bg-blue-400 text-white py-3" style={{backgroundColor: '#9FB7C9'}}>
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         {/* Social Icons */}
+        <style>{`
+          .topbar-icon {
+            color: white;
+            font-size: 1.25rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+          }
+          .topbar-icon:hover {
+            color: #E6D6A8;
+          }
+        `}</style>
         <div className="flex gap-4">
           <a 
             href="https://www.facebook.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-xl transition-colors"
-            style={{color: 'inherit'}}
-            onMouseEnter={(e) => e.currentTarget.style.color = '#E6D6A8'}
-            onMouseLeave={(e) => e.currentTarget.style.color = 'inherit'}
+            className="topbar-icon"
             title="Facebook"
           >
             f
@@ -22,10 +30,7 @@ export default function TopBar() {
             href="https://www.instagram.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-xl transition-colors"
-            style={{color: 'inherit'}}
-            onMouseEnter={(e) => e.currentTarget.style.color = '#E6D6A8'}
-            onMouseLeave={(e) => e.currentTarget.style.color = 'inherit'}
+            className="topbar-icon"
             title="Instagram"
           >
             📷
@@ -34,10 +39,7 @@ export default function TopBar() {
             href="https://www.youtube.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-xl transition-colors"
-            style={{color: 'inherit'}}
-            onMouseEnter={(e) => e.currentTarget.style.color = '#E6D6A8'}
-            onMouseLeave={(e) => e.currentTarget.style.color = 'inherit'}
+            className="topbar-icon"
             title="YouTube"
           >
             ▶

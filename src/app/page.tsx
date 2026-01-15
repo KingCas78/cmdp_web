@@ -17,45 +17,52 @@ export default function Home() {
 
   return (
     <div className="min-h-screen" style={{backgroundColor: '#F6F4EF'}}>
+      <style>{`
+        .hero-btn-primary {
+          background-color: #F6F4EF;
+          color: #9FB7C9;
+          padding: 0.75rem 2rem;
+          border-radius: 0.5rem;
+          font-weight: 600;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+        .hero-btn-primary:hover {
+          background-color: #E3E7EA;
+        }
+        .hero-btn-secondary {
+          border: 2px solid #F6F4EF;
+          color: #F6F4EF;
+          padding: 0.75rem 2rem;
+          border-radius: 0.5rem;
+          background-color: transparent;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .hero-btn-secondary:hover {
+          background-color: #D8D3E8;
+          border-color: #D8D3E8;
+        }
+      `}</style>
       {/* Hero Section */}
       <div className="text-white py-20" style={{background: 'linear-gradient(to right, #9FB7C9, #B7D7E8)'}}>
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">Bienvienidos</h1>
-          <p className="text-xl text-blue-100">
+          <h1 className="text-5xl font-bold mb-4">Bienvenidos</h1>
+          <p className="text-xl" style={{color: 'rgba(255,255,255,0.9)'}}>
             Colegio Mexicano de Dermatología Pediátrica A.C. - Uniendo a los especialistas en dermatología pediátrica de México para promover la excelencia médica y el bienestar infantil.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <a
               href="/webinars"
-              className="px-8 py-3 rounded-lg font-semibold transition-colors"
-              style={{
-                backgroundColor: '#F6F4EF',
-                color: '#9FB7C9'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#E3E7EA';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#F6F4EF';
-              }}
+              className="hero-btn-primary"
             >
               Ver Webinars
             </a>
             <a
               href="/contacto"
-              className="border-2 px-8 py-3 rounded-lg transition-all"
-              style={{
-                borderColor: '#F6F4EF',
-                color: '#F6F4EF'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#D8D3E8';
-                e.currentTarget.style.borderColor = '#D8D3E8';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = 'transparent';
-                e.currentTarget.style.borderColor = '#F6F4EF';
-              }}
+              className="hero-btn-secondary"
             >
               Contactarnos
             </a>
@@ -170,6 +177,23 @@ export default function Home() {
 
       {/* CTA Final */}
       <div className="text-white py-16" style={{background: 'linear-gradient(to right, #9FB7C9, #B7D7E8)'}}>
+        <style>{`
+          .cta-btn {
+            display: inline-block;
+            background-color: #F6F4EF;
+            color: #9FB7C9;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+          .cta-btn:hover {
+            background-color: #E6D6A8;
+            transform: translateY(-2px);
+          }
+        `}</style>
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-4">¿Listo para formar parte?</h2>
           <p className="mb-8 max-w-2xl mx-auto text-lg" style={{opacity: 0.95}}>
@@ -177,19 +201,7 @@ export default function Home() {
           </p>
           <a
             href="/contacto"
-            className="inline-block px-8 py-3 rounded-lg font-semibold transition-all"
-            style={{
-              backgroundColor: '#F6F4EF',
-              color: '#9FB7C9'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#E6D6A8';
-              e.currentTarget.style.transform = 'translateY(-2px)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '#F6F4EF';
-              e.currentTarget.style.transform = 'translateY(0)';
-            }}
+            className="cta-btn"
           >
             Solicita tu ingreso hoy
           </a>

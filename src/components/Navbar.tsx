@@ -29,24 +29,25 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
+          <style>{`
+            .navbar-link {
+              padding: 0.75rem;
+              color: #2C2C2C;
+              border-radius: 6px;
+              transition: all 0.3s ease;
+              cursor: pointer;
+            }
+            .navbar-link:hover {
+              background-color: #CFE9F5;
+              color: #9FB7C9;
+            }
+          `}</style>
           <div className="hidden lg:flex items-center gap-1">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-gray-700 rounded-md text-sm font-medium transition-colors"
-                style={{
-                  color: '#2C2C2C',
-                  borderRadius: '6px'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#CFE9F5';
-                  e.currentTarget.style.color = '#9FB7C9';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                  e.currentTarget.style.color = '#2C2C2C';
-                }}
+                className="navbar-link text-gray-700 text-sm font-medium"
               >
                 {link.label}
               </Link>
@@ -65,12 +66,18 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="lg:hidden pb-4 space-y-2">
+            <style>{`
+              .mobile-link:hover {
+                background-color: #CFE9F5;
+                color: #9FB7C9;
+              }
+            `}</style>
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 text-gray-700 hover:text-blue-500 hover:bg-pink-100 rounded-md"
+                className="mobile-link block px-3 py-2 text-gray-700 rounded-md"
               >
                 {link.label}
               </Link>
