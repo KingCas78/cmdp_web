@@ -4,7 +4,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-blue-900 text-gray-200">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* About */}
@@ -20,10 +20,10 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-4">Enlaces</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/" className="hover:text-blue-400">Inicio</Link></li>
-              <li><Link href="/webinars" className="hover:text-blue-400">Webinars</Link></li>
-              <li><Link href="/blog" className="hover:text-blue-400">Blog</Link></li>
-              <li><Link href="/contacto" className="hover:text-blue-400">Contacto</Link></li>
+              <li><Link href="/" className="hover:text-pink-300">Inicio</Link></li>
+              <li><Link href="/webinars" className="hover:text-pink-300">Webinars</Link></li>
+              <li><Link href="/blog" className="hover:text-pink-300">Blog</Link></li>
+              <li><Link href="/contacto" className="hover:text-pink-300">Contacto</Link></li>
             </ul>
           </div>
 
@@ -31,10 +31,10 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/estatutos" className="hover:text-blue-400">Estatutos</Link></li>
-              <li><Link href="/estatutos" className="hover:text-blue-400">Política de Privacidad</Link></li>
-              <li><Link href="/estatutos" className="hover:text-blue-400">Código de Ética</Link></li>
-              <li><Link href="/cndp" className="hover:text-blue-400">Congreso Nacional</Link></li>
+              <li><Link href="/estatutos" className="hover:text-pink-300">Estatutos</Link></li>
+              <li><Link href="/estatutos" className="hover:text-pink-300">Política de Privacidad</Link></li>
+              <li><Link href="/estatutos" className="hover:text-pink-300">Código de Ética</Link></li>
+              <li><Link href="/cndp" className="hover:text-pink-300">Congreso Nacional</Link></li>
             </ul>
           </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
               <li>✉️ info@cmdp.org</li>
               <li>📍 Caracas, Venezuela</li>
               <li className="pt-2">
-                <a href="/contacto" className="text-blue-400 hover:text-blue-300">
+                <a href="/contacto" className="text-pink-300 hover:text-pink-200">
                   Enviar Mensaje
                 </a>
               </li>
@@ -58,10 +58,10 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           {/* Social Links */}
           <div className="flex justify-center gap-6 mb-6">
-            <a href="#" className="text-2xl hover:text-blue-400">f</a>
-            <a href="#" className="text-2xl hover:text-blue-400">𝕏</a>
-            <a href="#" className="text-2xl hover:text-blue-400">in</a>
-            <a href="#" className="text-2xl hover:text-blue-400">▶</a>
+            <a href="#" className="text-2xl hover:text-pink-300">f</a>
+            <a href="#" className="text-2xl hover:text-pink-300">𝕏</a>
+            <a href="#" className="text-2xl hover:text-pink-300">in</a>
+            <a href="#" className="text-2xl hover:text-pink-300">▶</a>
           </div>
 
           {/* Copyright */}

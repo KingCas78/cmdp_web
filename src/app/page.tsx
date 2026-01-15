@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+      <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Bienvienidos</h1>
           <p className="text-xl text-blue-100">
@@ -27,13 +27,13 @@ export default function Home() {
           <div className="mt-8 flex justify-center gap-4">
             <a
               href="/webinars"
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 font-semibold"
+              className="bg-white text-blue-500 px-8 py-3 rounded-lg hover:bg-pink-50 font-semibold"
             >
               Ver Webinars
             </a>
             <a
               href="/contacto"
-              className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-blue-700"
+              className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-blue-600"
             >
               Contactarnos
             </a>

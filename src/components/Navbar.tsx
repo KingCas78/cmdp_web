@@ -34,7 +34,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md text-sm font-medium transition-colors"
+                className="px-3 py-2 text-gray-700 hover:text-blue-500 hover:bg-pink-100 rounded-md text-sm font-medium transition-colors"
               >
                 {link.label}
               </Link>
@@ -58,7 +58,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md"
+                className="block px-3 py-2 text-gray-700 hover:text-blue-500 hover:bg-pink-100 rounded-md"
               >
                 {link.label}
               </Link>
