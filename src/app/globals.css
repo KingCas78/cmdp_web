@@ -1,23 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --primary-blue: #2563eb;
-  --primary-blue-dark: #1e40af;
-  --primary-blue-light: #60a5fa;
-  --accent-pink: #f472b6;
-  --accent-pink-light: #fbcfe8;
-  --accent-pink-pale: #fce7f3;
-  --background: #ffffff;
+  --sky-blue: #CFE9F5;
+  --powder-blue: #B7D7E8;
+  --grayish-blue: #9FB7C9;
+  --soft-ivory: #F6F4EF;
+  --pearl-gray: #E3E7EA;
+  --pastel-gold: #E6D6A8;
+  --lavender-gray: #D8D3E8;
+  --background: #F6F4EF;
   --foreground: #171717;
 }
 
 @theme inline {
-  --color-primary-blue: var(--primary-blue);
-  --color-primary-blue-dark: var(--primary-blue-dark);
-  --color-primary-blue-light: var(--primary-blue-light);
-  --color-accent-pink: var(--accent-pink);
-  --color-accent-pink-light: var(--accent-pink-light);
-  --color-accent-pink-pale: var(--accent-pink-pale);
+  --color-sky-blue: var(--sky-blue);
+  --color-powder-blue: var(--powder-blue);
+  --color-grayish-blue: var(--grayish-blue);
+  --color-soft-ivory: var(--soft-ivory);
+  --color-pearl-gray: var(--pearl-gray);
+  --color-pastel-gold: var(--pastel-gold);
+  --color-lavender-gray: var(--lavender-gray);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);

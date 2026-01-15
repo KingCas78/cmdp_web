@@ -1,6 +1,6 @@
 export default function TopBar() {
   return (
-    <div className="bg-blue-500 text-white py-3">
+    <div className="bg-blue-400 text-white py-3" style={{backgroundColor: '#9FB7C9'}}>
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         {/* Social Icons */}
         <div className="flex gap-4">
@@ -8,7 +8,10 @@ export default function TopBar() {
             href="https://www.facebook.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-xl hover:text-pink-200 transition-colors"
+            className="text-xl transition-colors"
+            style={{color: 'inherit'}}
+            onMouseEnter={(e) => e.currentTarget.style.color = '#E6D6A8'}
+            onMouseLeave={(e) => e.currentTarget.style.color = 'inherit'}
             title="Facebook"
           >
             f
@@ -17,7 +20,10 @@ export default function TopBar() {
             href="https://www.instagram.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-xl hover:text-pink-200 transition-colors"
+            className="text-xl transition-colors"
+            style={{color: 'inherit'}}
+            onMouseEnter={(e) => e.currentTarget.style.color = '#E6D6A8'}
+            onMouseLeave={(e) => e.currentTarget.style.color = 'inherit'}
             title="Instagram"
           >
             📷
@@ -26,7 +32,10 @@ export default function TopBar() {
             href="https://www.youtube.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-xl hover:text-pink-200 transition-colors"
+            className="text-xl transition-colors"
+            style={{color: 'inherit'}}
+            onMouseEnter={(e) => e.currentTarget.style.color = '#E6D6A8'}
+            onMouseLeave={(e) => e.currentTarget.style.color = 'inherit'}
             title="YouTube"
           >
             ▶

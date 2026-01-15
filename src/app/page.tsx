@@ -16,9 +16,9 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen" style={{backgroundColor: '#F6F4EF'}}>
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-20">
+      <div className="text-white py-20" style={{background: 'linear-gradient(to right, #9FB7C9, #B7D7E8)'}}>
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Bienvienidos</h1>
           <p className="text-xl text-blue-100">
@@ -27,13 +27,35 @@ export default function Home() {
           <div className="mt-8 flex justify-center gap-4">
             <a
               href="/webinars"
-              className="bg-white text-blue-500 px-8 py-3 rounded-lg hover:bg-pink-50 font-semibold"
+              className="px-8 py-3 rounded-lg font-semibold transition-colors"
+              style={{
+                backgroundColor: '#F6F4EF',
+                color: '#9FB7C9'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#E3E7EA';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#F6F4EF';
+              }}
             >
               Ver Webinars
             </a>
             <a
               href="/contacto"
-              className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-blue-600"
+              className="border-2 px-8 py-3 rounded-lg transition-all"
+              style={{
+                borderColor: '#F6F4EF',
+                color: '#F6F4EF'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#D8D3E8';
+                e.currentTarget.style.borderColor = '#D8D3E8';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'transparent';
+                e.currentTarget.style.borderColor = '#F6F4EF';
+              }}
             >
               Contactarnos
             </a>
@@ -43,8 +65,8 @@ export default function Home() {
 
       {/* Secciones Principales */}
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Conoce Nuestro Sitio</h2>
-        <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+        <h2 className="text-4xl font-bold mb-4 text-center" style={{color: '#9FB7C9'}}>Conoce Nuestro Sitio</h2>
+        <p className="text-center mb-12 max-w-2xl mx-auto" style={{color: '#9FB7C9'}}>
           Explora todas nuestras secciones y descubre lo que CMDP tiene para ofrecerte
         </p>
 
@@ -53,21 +75,22 @@ export default function Home() {
             <a
               key={idx}
               href={seccion.href}
-              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all hover:-translate-y-2 p-6 block group"
+              className="rounded-lg shadow-md hover:shadow-lg transition-all hover:-translate-y-2 p-6 block group"
+              style={{backgroundColor: '#B7D7E8'}}
             >
-              <div className="relative w-full h-40 mb-4">
+              <div className="relative w-full h-40 mb-4 rounded-lg flex items-center justify-center" style={{backgroundColor: '#CFE9F5'}}>
                 <Image
                   src={seccion.imagen}
                   alt={seccion.nombre}
                   fill
-                  className="object-contain"
+                  className="object-contain p-4"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+              <h3 className="text-xl font-bold transition-colors group-hover:text-blue-600" style={{color: '#9FB7C9'}}>
                 {seccion.nombre}
               </h3>
-              <div className="mt-4 text-blue-600 font-semibold text-sm">
-                Explorar →
+              <div className="mt-4 font-semibold text-sm flex items-center gap-1" style={{color: '#E6D6A8'}}>
+                Explorar <span>→</span>
               </div>
             </a>
           ))}
@@ -75,29 +98,29 @@ export default function Home() {
       </div>
 
       {/* Características */}
-      <div className="bg-white py-16">
+      <div className="py-16" style={{backgroundColor: '#CFE9F5'}}>
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">¿Por qué unirse a CMDP?</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{color: '#9FB7C9'}}>¿Por qué unirse a CMDP?</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
+            <div className="text-center rounded-lg p-8" style={{backgroundColor: '#B7D7E8'}}>
               <div className="text-5xl mb-4">🎓</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Capacitación Continua</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold mb-3" style={{color: '#9FB7C9'}}>Capacitación Continua</h3>
+              <p style={{color: '#2C2C2C'}}>
                 Acceso a webinars, talleres y conferencias con expertos en dermatología pediátrica.
               </p>
             </div>
-            <div className="text-center">
+            <div className="text-center rounded-lg p-8" style={{backgroundColor: '#B7D7E8'}}>
               <div className="text-5xl mb-4">🤝</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Networking</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold mb-3" style={{color: '#9FB7C9'}}>Networking</h3>
+              <p style={{color: '#2C2C2C'}}>
                 Conecta con otros dermatólogos pediatras y profesionales del sector.
               </p>
             </div>
-            <div className="text-center">
+            <div className="text-center rounded-lg p-8" style={{backgroundColor: '#B7D7E8'}}>
               <div className="text-5xl mb-4">📊</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Comunidad médica dermatológica</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold mb-3" style={{color: '#9FB7C9'}}>Actualizaciones</h3>
+              <p style={{color: '#2C2C2C'}}>
                 Actualizaciones constantes sobre avances y tendencias en dermatología pediátrica.
               </p>
             </div>
@@ -107,54 +130,66 @@ export default function Home() {
 
       {/* Últimas Actividades */}
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Últimas Actividades</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center" style={{color: '#9FB7C9'}}>Próximas Sesiones y Eventos</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-3">
+          <div className="rounded-lg shadow-sm p-6" style={{backgroundColor: '#B7D7E8', border: '1px solid #E3E7EA'}}>
+            <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3" style={{backgroundColor: '#D8D3E8', color: '#9FB7C9'}}>
               Webinar
             </span>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Conferencias magistrales y clases destacadas</h3>
-            <p className="text-gray-600 text-sm mb-4">
-             Explora nuestras conferencias magistrales y clases destacadas impartidas por expertos en dermatología pediátrica.
+            <h3 className="text-xl font-bold mb-2" style={{color: '#9FB7C9'}}>Conferencias Magistrales</h3>
+            <p className="text-sm mb-4" style={{color: '#2C2C2C'}}>
+              Explora nuestras conferencias magistrales impartidas por expertos en dermatología pediátrica.
             </p>
-            <p className="text-gray-500 text-xs">15 de Enero - 10:00 AM</p>
+            <p className="text-xs" style={{color: '#9FB7C9'}}>📅 Próxima: Enero 2026</p>
           </div>
 
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <span className="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-3">
+          <div className="rounded-lg shadow-sm p-6" style={{backgroundColor: '#B7D7E8', border: '1px solid #E3E7EA'}}>
+            <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3" style={{backgroundColor: '#D8D3E8', color: '#9FB7C9'}}>
               Galería
             </span>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Congresos Nacionales de Dermatología Pediátrica</h3>
-            <p className="text-gray-600 text-sm mb-4">
-              Revive los momentos especiales de los últimos congresos
+            <h3 className="text-xl font-bold mb-2" style={{color: '#9FB7C9'}}>Congresos y Eventos</h3>
+            <p className="text-sm mb-4" style={{color: '#2C2C2C'}}>
+              Revive los momentos especiales de nuestros congresos nacionales
             </p>
-            <p className="text-gray-500 text-xs">Noviembre 2025</p>
+            <p className="text-xs" style={{color: '#9FB7C9'}}>📸 Galería disponible</p>
           </div>
 
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <span className="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold mb-3">
-              Artículo
+          <div className="rounded-lg shadow-sm p-6" style={{backgroundColor: '#B7D7E8', border: '1px solid #E3E7EA'}}>
+            <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3" style={{backgroundColor: '#D8D3E8', color: '#9FB7C9'}}>
+              Blog
             </span>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Próximos Avances en Dermatología Pediátrica</h3>
-            <p className="text-gray-600 text-sm mb-4">
-              Exploramos las tendencias que definirán el próximo cambio
+            <h3 className="text-xl font-bold mb-2" style={{color: '#9FB7C9'}}>Artículos y Noticias</h3>
+            <p className="text-sm mb-4" style={{color: '#2C2C2C'}}>
+              Exploramos las tendencias que definen el futuro de la dermatología pediátrica
             </p>
-            <p className="text-gray-500 text-xs">10 de Enero - 8 min lectura</p>
+            <p className="text-xs" style={{color: '#9FB7C9'}}>📝 Artículos recientes</p>
           </div>
         </div>
       </div>
 
       {/* CTA Final */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
+      <div className="text-white py-16" style={{background: 'linear-gradient(to right, #9FB7C9, #B7D7E8)'}}>
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">¿Listo para formar parte?</h2>
-          <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-            Únete al Colegio Mexicano de Dermatología Pediátrica A.C. y accede a recursos exclusivos, eventos y una comunidad dedicada a la excelencia en dermatología pediátrica.
+          <h2 className="text-4xl font-bold mb-4">¿Listo para formar parte?</h2>
+          <p className="mb-8 max-w-2xl mx-auto text-lg" style={{opacity: 0.95}}>
+            Únete al Colegio de Médicos Dermatólogos Pediátricos y accede a recursos exclusivos, eventos y una comunidad dedicada a la excelencia.
           </p>
           <a
             href="/contacto"
-            className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 font-semibold transition-colors"
+            className="inline-block px-8 py-3 rounded-lg font-semibold transition-all"
+            style={{
+              backgroundColor: '#F6F4EF',
+              color: '#9FB7C9'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#E6D6A8';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = '#F6F4EF';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}
           >
             Solicita tu ingreso hoy
           </a>
