@@ -1,3 +1,5 @@
+'use client'
+
 export default function Banner() {
   return (
     <div className="py-6" style={{background: 'linear-gradient(to right, #D8D3E8, #E6D6A8)'}}>

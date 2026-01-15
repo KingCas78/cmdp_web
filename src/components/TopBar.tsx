@@ -1,3 +1,5 @@
+'use client'
+
 export default function TopBar() {
   return (
     <div className="bg-blue-400 text-white py-3" style={{backgroundColor: '#9FB7C9'}}>
