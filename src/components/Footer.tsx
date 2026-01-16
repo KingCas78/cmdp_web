@@ -6,22 +6,12 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="text-gray-800 mt-16" style={{backgroundColor: '#CFE9F5'}}>
-      <style>{`
-        .footer-link {
-          color: #E6D6A8;
-          transition: color 0.3s ease;
-          cursor: pointer;
-        }
-        .footer-link:hover {
-          color: #9FB7C9;
-        }
-      `}</style>
+    <footer className="text-gray-800 mt-16 footer-bg">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* About */}
           <div>
-            <h3 className="font-bold mb-4" style={{color: '#9FB7C9'}}>CMDP</h3>
+            <h3 className="footer-title">CMDP</h3>
             <p className="text-sm">
               Colegio de Médicos Dermatólogos - Promoviendo la excelencia, 
               innovación y educación continua en dermatología.
@@ -30,7 +20,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold mb-4" style={{color: '#9FB7C9'}}>Enlaces</h4>
+            <h4 className="footer-title">Enlaces</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/" className="footer-link">Inicio</Link></li>
               <li><Link href="/webinars" className="footer-link">Webinars</Link></li>
@@ -41,7 +31,7 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-bold mb-4" style={{color: '#9FB7C9'}}>Legal</h4>
+            <h4 className="footer-title">Legal</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/estatutos" className="footer-link">Estatutos</Link></li>
               <li><Link href="/estatutos" className="footer-link">Política de Privacidad</Link></li>
@@ -52,7 +42,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-bold mb-4" style={{color: '#9FB7C9'}}>Contacto</h4>
+            <h4 className="footer-title">Contacto</h4>
             <ul className="space-y-2 text-sm">
               <li>📱 +52 (33) 1303-4546</li>
               <li>✉️ info@cmdp.org</li>
@@ -67,7 +57,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div style={{borderTop: '1px solid #B7D7E8'}} className="pt-8">
+        <div className="footer-divider pt-8">
           {/* Social Links */}
           <div className="flex justify-center gap-6 mb-6">
             <a href="https://www.facebook.com" className="text-2xl footer-link">f</a>

@@ -2,20 +2,8 @@
 
 export default function TopBar() {
   return (
-    <div className="bg-blue-400 text-white py-3" style={{backgroundColor: '#9FB7C9'}}>
+    <div className="topbar-bg text-white py-3">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-        {/* Social Icons */}
-        <style>{`
-          .topbar-icon {
-            color: white;
-            font-size: 1.25rem;
-            transition: color 0.3s ease;
-            cursor: pointer;
-          }
-          .topbar-icon:hover {
-            color: #E6D6A8;
-          }
-        `}</style>
         <div className="flex gap-4">
           <a 
             href="https://www.facebook.com" 

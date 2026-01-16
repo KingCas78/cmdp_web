@@ -1,0 +1,224 @@
+/* Color Palette */
+:root {
+  --sky-blue: #CFE9F5;
+  --powder-blue: #B7D7E8;
+  --grayish-blue: #9FB7C9;
+  --soft-ivory: #F6F4EF;
+  --pearl-gray: #E3E7EA;
+  --pastel-gold: #E6D6A8;
+  --lavender-gray: #D8D3E8;
+}
+
+/* TopBar Styles */
+.topbar-bg {
+  background-color: var(--grayish-blue);
+}
+
+.topbar-icon {
+  color: white;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.topbar-icon:hover {
+  color: var(--pastel-gold);
+}
+
+/* Navbar Styles */
+.navbar-bg {
+  background-color: var(--soft-ivory);
+  border-bottom: 1px solid var(--pearl-gray);
+}
+
+.navbar-link {
+  padding: 0.75rem;
+  color: #2C2C2C;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.navbar-link:hover {
+  background-color: var(--sky-blue);
+  color: var(--grayish-blue);
+}
+
+/* Banner Styles */
+.banner-gradient {
+  background: linear-gradient(to right, var(--lavender-gray), var(--pastel-gold));
+}
+
+.banner-title {
+  color: var(--grayish-blue);
+}
+
+.banner-text {
+  color: var(--grayish-blue);
+  opacity: 0.9;
+}
+
+.banner-btn {
+  background-color: var(--grayish-blue);
+  color: var(--soft-ivory);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.banner-btn:hover {
+  background-color: var(--powder-blue);
+  transform: translateY(-2px);
+}
+
+/* Footer Styles */
+.footer-bg {
+  background-color: var(--sky-blue);
+}
+
+.footer-title {
+  color: var(--grayish-blue);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-divider {
+  border-top: 1px solid var(--powder-blue);
+}
+
+.footer-link {
+  color: var(--pastel-gold);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: var(--grayish-blue);
+}
+
+/* Home Page Styles */
+.page-bg {
+  background-color: var(--soft-ivory);
+}
+
+.hero-gradient {
+  background: linear-gradient(to right, var(--grayish-blue), var(--powder-blue));
+}
+
+.hero-btn-primary {
+  display: inline-block;
+  background-color: var(--soft-ivory);
+  color: var(--grayish-blue);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-btn-primary:hover {
+  background-color: var(--pearl-gray);
+}
+
+.hero-btn-secondary {
+  display: inline-block;
+  border: 2px solid var(--soft-ivory);
+  color: var(--soft-ivory);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-btn-secondary:hover {
+  background-color: var(--lavender-gray);
+  border-color: var(--lavender-gray);
+}
+
+/* Section Styles */
+.section-bg-sky {
+  background-color: var(--sky-blue);
+}
+
+.section-title {
+  color: var(--grayish-blue);
+}
+
+.card-bg {
+  background-color: var(--powder-blue);
+  border: 1px solid var(--pearl-gray);
+}
+
+.card-title {
+  color: var(--grayish-blue);
+}
+
+.card-text {
+  color: #2C2C2C;
+}
+
+.card-badge {
+  background-color: var(--lavender-gray);
+  color: var(--grayish-blue);
+}
+
+/* CTA Section Styles */
+.cta-gradient {
+  background: linear-gradient(to right, var(--grayish-blue), var(--powder-blue));
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: var(--soft-ivory);
+  color: var(--grayish-blue);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: var(--pastel-gold);
+  transform: translateY(-2px);
+}
+
+/* Hero Text Colors */
+.hero-text-white {
+  color: white;
+  opacity: 0.9;
+}
+
+/* Card Styles */
+.card-border {
+  border: 1px solid var(--pearl-gray);
+}
+
+/* Mobile Menu Styles */
+.mobile-link {
+  display: block;
+  padding: 0.75rem;
+  color: #2C2C2C;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.mobile-link:hover {
+  background-color: var(--sky-blue);
+  color: var(--grayish-blue);
+}
