@@ -22,12 +22,6 @@ export default function Navbar() {
     <nav className="shadow-md sticky top-0 z-50 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl">🏢</span>
-            <span className="font-bold text-gray-900 text-lg hidden sm:inline">CMDP</span>
-          </Link>
-
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-1">
             {links.map((link) => (

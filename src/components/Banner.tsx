@@ -2,25 +2,17 @@
 
 export default function Banner() {
   return (
-    <div className="py-6 banner-gradient">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex-1">
-            <h3 className="text-lg md:text-2xl font-bold mb-2 banner-title">
-              🎉 Congreso Nacional de Dermatología Pediátrica
-            </h3>
-            <p className="text-sm md:text-base banner-text">
-              Únete a nosotros del 2 al 5 de julio para el congreso más importante en dermatología pediátrica
-            </p>
-          </div>
-          <a
-            href="/cndp"
-            className="banner-btn"
-          >
-            Saber más
-          </a>
-        </div>
-      </div>
+    <div className="w-full">
+      <img 
+        src="//congresodermajal.com.mx/cdn/shop/files/CONGRESO_BANNER_2.jpg?v=1747427278&width=3840" 
+        alt="Congreso Nacional de Dermatología Pediátrica" 
+        srcSet="//congresodermajal.com.mx/cdn/shop/files/CONGRESO_BANNER_2.jpg?v=1747427278&width=375 375w, //congresodermajal.com.mx/cdn/shop/files/CONGRESO_BANNER_2.jpg?v=1747427278&width=550 550w, //congresodermajal.com.mx/cdn/shop/files/CONGRESO_BANNER_2.jpg?v=1747427278&width=750 750w, //congresodermajal.com.mx/cdn/shop/files/CONGRESO_BANNER_2.jpg?v=1747427278&width=1100 1100w, //congresodermajal.com.mx/cdn/shop/files/CONGRESO_BANNER_2.jpg?v=1747427278&width=1500 1500w, //congresodermajal.com.mx/cdn/shop/files/CONGRESO_BANNER_2.jpg?v=1747427278&width=1780 1780w, //congresodermajal.com.mx/cdn/shop/files/CONGRESO_BANNER_2.jpg?v=1747427278&width=2000 2000w, //congresodermajal.com.mx/cdn/shop/files/CONGRESO_BANNER_2.jpg?v=1747427278&width=3000 3000w, //congresodermajal.com.mx/cdn/shop/files/CONGRESO_BANNER_2.jpg?v=1747427278&width=3840 3840w" 
+        width={6000} 
+        height={2000} 
+        sizes="100vw" 
+        className="w-full h-auto"
+        priority
+      />
     </div>
   )
 }
