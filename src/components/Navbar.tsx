@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import styles from './Navbar.module.css'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,7 +19,7 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className={`shadow-md sticky top-0 z-50 ${styles.navbar}`}>
+    <nav className="shadow-md sticky top-0 z-50 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -35,7 +34,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`${styles.navbarLink} text-gray-700 text-sm font-medium`}
+                className="text-gray-700 text-sm font-medium px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
               >
                 {link.label}
               </Link>
@@ -59,7 +58,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`${styles.mobileLink} block px-3 py-2 text-gray-700 rounded-md`}
+                className="block px-3 py-2 text-gray-700 rounded-md hover:bg-gray-100 transition-colors"
               >
                 {link.label}
               </Link>
