@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import styles from './Navbar.module.css'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +20,7 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="shadow-md sticky top-0 z-50" style={{backgroundColor: '#F6F4EF', borderBottom: '1px solid #E3E7EA'}}>
+    <nav className={`shadow-md sticky top-0 z-50 ${styles.navbar}`}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -29,25 +30,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <style>{`
-            .navbar-link {
-              padding: 0.75rem;
-              color: #2C2C2C;
-              border-radius: 6px;
-              transition: all 0.3s ease;
-              cursor: pointer;
-            }
-            .navbar-link:hover {
-              background-color: #CFE9F5;
-              color: #9FB7C9;
-            }
-          `}</style>
           <div className="hidden lg:flex items-center gap-1">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="navbar-link text-gray-700 text-sm font-medium"
+                className={`${styles.navbarLink} text-gray-700 text-sm font-medium`}
               >
                 {link.label}
               </Link>
@@ -66,18 +54,12 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="lg:hidden pb-4 space-y-2">
-            <style>{`
-              .mobile-link:hover {
-                background-color: #CFE9F5;
-                color: #9FB7C9;
-              }
-            `}</style>
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="mobile-link block px-3 py-2 text-gray-700 rounded-md"
+                className={`${styles.mobileLink} block px-3 py-2 text-gray-700 rounded-md`}
               >
                 {link.label}
               </Link>

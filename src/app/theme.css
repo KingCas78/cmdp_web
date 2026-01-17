@@ -7,11 +7,12 @@
   --pearl-gray: #E3E7EA;
   --pastel-gold: #E6D6A8;
   --lavender-gray: #D8D3E8;
+  --navy-blue: #001F3F;
 }
 
 /* TopBar Styles */
 .topbar-bg {
-  background-color: var(--grayish-blue);
+  background-color: var(--navy-blue);
 }
 
 .topbar-icon {
