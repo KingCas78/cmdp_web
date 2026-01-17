@@ -5,7 +5,7 @@ import "./theme.css";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
-import Banner from "@/components/Banner";
+import Slider from "@/components/Slider";
 import Footer from "@/components/Footer";
 
 const geistSans = Geist({
@@ -36,7 +36,7 @@ export default function RootLayout({
         <TopBar />
         <Header />
         <Navbar />
-        <Banner />
+        <Slider />
         {children}
         <Footer />
       </body>
