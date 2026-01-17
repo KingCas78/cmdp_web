@@ -21,8 +21,8 @@ export default function Navbar() {
   return (
     <nav className="shadow-md sticky top-0 z-50 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          {/* Desktop Menu */}
+        <div className="flex justify-center items-center h-16 relative">
+          {/* Desktop Menu - Centrado */}
           <div className="hidden lg:flex items-center gap-1">
             {links.map((link) => (
               <Link
@@ -35,10 +35,10 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button - Posicionado a la derecha */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+            className="lg:hidden absolute right-4 inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100"
           >
             <span className="text-2xl">{isOpen ? '✕' : '☰'}</span>
           </button>
