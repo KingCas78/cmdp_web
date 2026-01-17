@@ -21,6 +21,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "CMDP - Colegio Mexicano de Dermatología Pediátrica",
   description: "Bienvenido al CMDP.",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({

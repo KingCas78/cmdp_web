@@ -22,7 +22,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Bienvenidos</h1>
           <p className="text-xl hero-text-white">
-            Colegio Mexicano de Dermatología Pediátrica A.C. - Uniendo a los especialistas en dermatología pediátrica de México para promover la excelencia médica y el bienestar infantil.
+            Colegio Mexicano de Dermatología Pediátrica A.C.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <a
