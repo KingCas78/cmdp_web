@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import './Slider.css'
 
 export default function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -32,7 +33,7 @@ export default function Slider() {
   }
 
   return (
-    <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16 / 5' }}>
+    <div className="slider-container relative w-full overflow-hidden">
       {/* Slides */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => (
