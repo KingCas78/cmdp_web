@@ -172,7 +172,7 @@
 }
 
 .card-badge {
-  background-color: var(--lavender-gray);
+  background-color: var(--sky-blue);
   color: var(--grayish-blue);
 }
 
@@ -201,8 +201,8 @@
 
 /* Hero Text Colors */
 .hero-text-white {
-  color: white;
-  opacity: 0.9;
+  color: #FFFFFF;
+  opacity: 1;
 }
 
 /* Card Styles */

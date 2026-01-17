@@ -4,14 +4,14 @@ import Image from 'next/image'
 
 export default function Home() {
   const seccionesNav = [
-    { nombre: 'Inicio', href: '/', imagen: '/images/inicio.svg' },
+    { nombre: 'Inicio', href: '/', imagen: '/images/Logo_CMDP.png' },
     { nombre: 'Webinars', href: '/webinars', imagen: '/images/webinars.png' },
     { nombre: 'Mesa Directiva', href: '/mesa-directiva', imagen: '/images/mesa-directiva.png' },
     { nombre: 'Videoteca', href: '/videoteca', imagen: '/images/videoteca.png' },
-    { nombre: 'Estatutos', href: '/estatutos', imagen: '/images/estatutos.svg' },
-    { nombre: 'Galería', href: '/galeria', imagen: '/images/galeria.svg' },
-    { nombre: 'Blog', href: '/blog', imagen: '/images/blog.svg' },
-    { nombre: 'Contacto', href: '/contacto', imagen: '/images/contacto.svg' },
+    { nombre: 'Estatutos', href: '/estatutos', imagen: '/images/estatutos.png' },
+    { nombre: 'Galería', href: '/galeria', imagen: '/images/galeria.png' },
+    { nombre: 'Blog', href: '/blog', imagen: '/images/blog.png' },
+    { nombre: 'Contacto', href: '/contacto', imagen: '/images/contacto.png' },
     { nombre: 'Congreso Nacional', href: '/cndp', imagen: '/images/cndp.png' }
   ]
 
