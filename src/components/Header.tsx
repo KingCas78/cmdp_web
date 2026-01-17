@@ -24,8 +24,11 @@ export default function Header() {
           {/* Logo - Centro */}
           <div className="flex justify-center">
             <Link href="/" className="flex flex-col items-center gap-1">
-              <span className="text-4xl">🏥</span>
-              <span className="text-sm font-semibold text-gray-900">CMDP</span>
+              <img 
+                src="/images/Logo_CMDP.png" 
+                alt="Logo CMDP"
+                className="h-16 w-auto"
+              />
             </Link>
           </div>
 
