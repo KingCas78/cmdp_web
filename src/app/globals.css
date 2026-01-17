@@ -10,6 +10,7 @@
   --lavender-gray: #D8D3E8;
   --background: #F6F4EF;
   --foreground: #171717;
+  --blue-marine: #1b408b;
 }
 
 @layer theme {
@@ -25,6 +26,7 @@
     --color-foreground: var(--foreground);
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
+    --font-btn: var(--font-geist-btn);
   }
 }
 
