@@ -12,18 +12,20 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-sky-blue: var(--sky-blue);
-  --color-powder-blue: var(--powder-blue);
-  --color-grayish-blue: var(--grayish-blue);
-  --color-soft-ivory: var(--soft-ivory);
-  --color-pearl-gray: var(--pearl-gray);
-  --color-pastel-gold: var(--pastel-gold);
-  --color-lavender-gray: var(--lavender-gray);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer theme {
+  :root {
+    --color-sky-blue: var(--sky-blue);
+    --color-powder-blue: var(--powder-blue);
+    --color-grayish-blue: var(--grayish-blue);
+    --color-soft-ivory: var(--soft-ivory);
+    --color-pearl-gray: var(--pearl-gray);
+    --color-pastel-gold: var(--pastel-gold);
+    --color-lavender-gray: var(--lavender-gray);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+  }
 }
 
 @media (prefers-color-scheme: dark) {

@@ -12,7 +12,7 @@ export default function TopBar() {
             className="topbar-icon"
             title="Facebook"
           >
-            f
+            <img src="/images/icon-facebook.png" alt="Facebook" className="w-6 h-6" />
           </a>
           <a 
             href="https://www.instagram.com" 
@@ -21,7 +21,7 @@ export default function TopBar() {
             className="topbar-icon"
             title="Instagram"
           >
-            📷
+             <img src="/images/icon-ig.png" alt="Instagram" className="w-6 h-6" />
           </a>
           <a 
             href="https://www.youtube.com" 
@@ -30,7 +30,7 @@ export default function TopBar() {
             className="topbar-icon"
             title="YouTube"
           >
-            ▶
+            <img src="/images/icon-youtube.png" alt="YouTube" className="w-6 h-6" />
           </a>
         </div>
 

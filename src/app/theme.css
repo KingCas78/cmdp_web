@@ -1,7 +1,7 @@
 /* Color Palette */
 :root {
   --sky-blue: #CFE9F5;
-  --powder-blue: #B7D7E8;
+  --powder-blue: #056e9f;
   --grayish-blue: #9FB7C9;
   --soft-ivory: #F6F4EF;
   --pearl-gray: #E3E7EA;
@@ -154,7 +154,7 @@
 }
 
 .section-title {
-  color: var(--grayish-blue);
+  color: #1b408b;
 }
 
 .card-bg {
