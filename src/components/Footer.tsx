@@ -13,8 +13,8 @@ export default function Footer() {
           <div>
             <h3 className="footer-title">CMDP</h3>
             <p className="text-sm">
-              Colegio de Médicos Dermatólogos - Promoviendo la excelencia, 
-              innovación y educación continua en dermatología.
+              Colegio Médico de Dermatología Pediátrica - Promoviendo la excelencia, 
+              innovación y educación continua en dermatología en pediatría.
             </p>
           </div>
 
@@ -31,11 +31,9 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="footer-title">Legal</h4>
+            <h4 className="footer-title">Documentación</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/estatutos" className="footer-link">Estatutos</Link></li>
-              <li><Link href="/estatutos" className="footer-link">Política de Privacidad</Link></li>
-              <li><Link href="/estatutos" className="footer-link">Código de Ética</Link></li>
               <li><Link href="/cndp" className="footer-link">Congreso Nacional</Link></li>
             </ul>
           </div>
@@ -44,9 +42,9 @@ export default function Footer() {
           <div>
             <h4 className="footer-title">Contacto</h4>
             <ul className="space-y-2 text-sm">
-              <li>📱 +52 (33) 1303-4546</li>
-              <li>✉️ info@cmdp.org</li>
-              <li>📍 Guadalajara, Jalisco</li>
+              <li>📱 +52 </li>
+              <li>✉️ col.mex.derma.pediao@gmail.com</li>
+              <li>📍 México</li>
               <li className="pt-2">
                 <a href="/contacto" className="footer-link">
                   Enviar Mensaje
@@ -60,20 +58,25 @@ export default function Footer() {
         <div className="footer-divider pt-8">
           {/* Social Links */}
           <div className="flex justify-center gap-6 mb-6">
-            <a href="https://www.facebook.com" className="text-2xl footer-link">f</a>
-            <a href="https://www.instagram.com" className="text-2xl footer-link">📷</a>
-            <a href="https://www.youtube.com" className="text-2xl footer-link">▶</a>
-            <a href="https://wa.me" className="text-2xl footer-link">💬</a>
+            <a href="https://www.facebook.com" className="footer-link">
+              <img src="/images/icon-facebook.png" alt="Facebook" className="w-6 h-6" />
+            </a>
+            <a href="https://www.instagram.com" className="footer-link">
+              <img src="/images/icon-ig.png" alt="Instagram" className="w-6 h-6" />
+            </a>
+            <a href="https://www.youtube.com" className="footer-link">
+              <img src="/images/icon-youtube.png" alt="YouTube" className="w-6 h-6" />
+            </a>
           </div>
 
           {/* Copyright */}
           <div className="text-center text-sm">
             <p>
-              © {year} CMDP - Colegio de Médicos Dermatólogos. 
+              © {year} CMDP - Colegio Mexicano de Dermatología Pediátrica. 
               Todos los derechos reservados.
             </p>
             <p className="mt-2 text-gray-500">
-              Desarrollado con ❤️ usando Next.js, Supabase y Vercel
+              Desarrollado CCS
             </p>
           </div>
         </div>

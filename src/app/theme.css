@@ -81,11 +81,11 @@
 
 /* Footer Styles */
 .footer-bg {
-  background-color: var(--sky-blue);
+  background-color: var(--powder-blue);
 }
 
 .footer-title {
-  color: var(--grayish-blue);
+  color: var(--lavender-gray);
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -95,7 +95,7 @@
 }
 
 .footer-link {
-  color: var(--pastel-gold);
+  color: var(--pearl-gray);
   transition: color 0.3s ease;
   cursor: pointer;
 }
@@ -168,11 +168,11 @@
 }
 
 .card-text {
-  color: #2C2C2C;
+  color: white;
 }
 
 .card-badge {
-   color: var(--grayish-blue);
+   color: white;
 }
 
 /* CTA Section Styles */

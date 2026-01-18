@@ -74,28 +74,28 @@ export default function Home() {
       {/* Características */}
       <div className="py-16 section-bg-sky">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center section-title">¿Por qué unirse a CMDP?</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center section-title">Lo que hacemos</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center rounded-lg p-8 card-bg">
-              <div className="text-5xl mb-4">🎓</div>
+              <img src="/images/capacitacion.png" alt="Capacitación" className="w-16 h-16 mx-auto mb-4 object-contain" />
               <h3 className="text-xl font-bold mb-3 card-title">Capacitación Continua</h3>
               <p className="card-text">
                 Acceso a webinars, talleres y conferencias con expertos en dermatología pediátrica.
               </p>
             </div>
             <div className="text-center rounded-lg p-8 card-bg">
-              <div className="text-5xl mb-4">🤝</div>
-              <h3 className="text-xl font-bold mb-3 card-title">Networking</h3>
+              <img src="/images/comunidad.png" alt="Comunidad" className="w-16 h-16 mx-auto mb-4 object-contain" />
+              <h3 className="text-xl font-bold mb-3 card-title">Comunidad</h3>
               <p className="card-text">
                 Conecta con otros dermatólogos pediatras y profesionales del sector.
               </p>
             </div>
             <div className="text-center rounded-lg p-8 card-bg">
-              <div className="text-5xl mb-4">📊</div>
+              <img src="/images/actualizaciones.png" alt="Actualizaciones" className="w-16 h-16 mx-auto mb-4 object-contain" />
               <h3 className="text-xl font-bold mb-3 card-title">Actualizaciones</h3>
               <p className="card-text">
-                Actualizaciones constantes sobre avances y tendencias en dermatología pediátrica.
+                Congresos sobre avances y tendencias en dermatología pediátrica.
               </p>
             </div>
           </div>
@@ -145,9 +145,9 @@ export default function Home() {
       {/* CTA Final */}
       <div className="text-white py-16 cta-gradient">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4">¿Listo para formar parte?</h2>
+          <h2 className="text-4xl font-bold mb-4">Se parte del Colegio Mexicano de Dermatología Pediátrica</h2>
           <p className="mb-8 max-w-2xl mx-auto text-lg hero-text-white">
-            Únete al Colegio de Médicos Dermatólogos Pediátricos y accede a recursos exclusivos, eventos y una comunidad dedicada a la excelencia.
+            Únete al Colegio Mexicano de Dermatología Pediátrica, participa en eventos y una comunidad dedicada a la excelencia.
           </p>
           <a
             href="/contacto"
