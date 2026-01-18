@@ -120,7 +120,7 @@ export default function Home() {
             href="/cndp"
             className="hero-btn-secondary"
           >
-            Registrarse al Congreso
+            Informes del Congreso
           </a>
         </div>
       </div>

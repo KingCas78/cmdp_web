@@ -1,5 +1,7 @@
 'use client'
 
+import styles from './page.module.css'
+
 export default function Webinars() {
   const webinars = [
     {
@@ -41,12 +43,12 @@ export default function Webinars() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className={`min-h-screen ${styles.container}`}>
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
+      <div className={`text-white py-12 ${styles.header}`}>
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Webinars</h1>
-          <p className="text-blue-100 mt-2">Aprende de expertos en tu industria</p>
+          <p className={`mt-2 ${styles.headerText}`}>Aprende de expertos en tu industria</p>
         </div>
       </div>
 
@@ -69,7 +71,7 @@ export default function Webinars() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {webinars.map((webinar) => (
             <div key={webinar.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-              <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-32"></div>
+              <div className={`h-32 ${styles.imagePlaceholder}`}></div>
               <div className="p-6">
                 <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
                   webinar.estado === 'Próximo' 
@@ -87,7 +89,7 @@ export default function Webinars() {
                   <p className="text-gray-700"><strong>Disertante:</strong> {webinar.disertante}</p>
                 </div>
 
-                <button className="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                <button className={`mt-6 w-full text-white py-2 rounded-lg transition-colors ${styles.registerButton}`}>
                   Registrarse
                 </button>
               </div>
