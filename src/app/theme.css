@@ -82,10 +82,11 @@
 /* Footer Styles */
 .footer-bg {
   background-color: var(--powder-blue);
+  color: #E3E7EA;
 }
 
 .footer-title {
-  color: var(--lavender-gray);
+  color: #E3E7EA;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -95,13 +96,13 @@
 }
 
 .footer-link {
-  color: var(--pearl-gray);
+  color: #E3E7EA;
   transition: color 0.3s ease;
   cursor: pointer;
 }
 
 .footer-link:hover {
-  color: var(--grayish-blue);
+  color: white;
 }
 
 /* Home Page Styles */
