@@ -5,7 +5,6 @@ import "./theme.css";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
-import SliderWrapper from "@/components/SliderWrapper";
 import Footer from "@/components/Footer";
 import AOSInit from "@/components/AOSInit";
 
@@ -41,7 +40,6 @@ export default function RootLayout({
         <TopBar />
         <Header />
         <Navbar />
-        <SliderWrapper />
         {children}
         <Footer />
       </body>
