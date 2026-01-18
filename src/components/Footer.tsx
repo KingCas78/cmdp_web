@@ -12,10 +12,11 @@ export default function Footer() {
           {/* About */}
           <div>
             <h3 className="footer-title">CMDP</h3>
-            <p className="text-sm">
-              Colegio Médico de Dermatología Pediátrica - Promoviendo la excelencia, 
-              innovación y educación continua en dermatología en pediatría.
-            </p>
+            <img 
+              src="/images/logo-horizontal.png" 
+              alt="CMDP Logo" 
+              className="h-12 object-contain"
+            />
           </div>
 
           {/* Quick Links */}
@@ -31,10 +32,10 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="footer-title">Documentación</h4>
+            <h4 className="footer-title">Legales</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/estatutos" className="footer-link">Estatutos</Link></li>
-              <li><Link href="/cndp" className="footer-link">Congreso Nacional</Link></li>
+              <li><a href="/documents/aviso-de-privacidad.pdf" className="footer-link" target="_blank" rel="noopener noreferrer">Aviso de Privacidad</a></li>
             </ul>
           </div>
 
