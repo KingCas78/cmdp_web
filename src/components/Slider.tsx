@@ -3,8 +3,16 @@
 import { useState, useEffect } from 'react'
 import './Slider.css'
 
-export default function Slider() {
+interface SliderProps {
+  isVisible?: boolean
+}
+
+export default function Slider({ isVisible = true }: SliderProps) {
   const [currentSlide, setCurrentSlide] = useState(0)
+
+  if (!isVisible) {
+    return null
+  }
   
   const slides = [
     { id: 1, src: '/images/BANNER_1.webp', alt: 'Banner 1' },
