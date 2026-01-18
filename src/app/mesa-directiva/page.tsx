@@ -1,5 +1,7 @@
 'use client'
 
+import './mesa-directiva.css'
+
 export default function MesaDirectiva() {
   const miembros = [
     {
@@ -59,12 +61,12 @@ export default function MesaDirectiva() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="mesa-directiva-container">
       {/* Header */}
-      <div className="bg-gradient-to-r from-purple-600 to-purple-800 text-white py-12">
+      <div className="mesa-directiva-header">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Mesa Directiva</h1>
-          <p className="text-purple-100 mt-2">Conoce a nuestros líderes</p>
+          <p className="mesa-directiva-header-text">Conoce a nuestros líderes</p>
         </div>
       </div>
 
@@ -79,21 +81,21 @@ export default function MesaDirectiva() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {miembros.map((miembro) => (
             <div key={miembro.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden text-center">
-              <div className="bg-gradient-to-r from-purple-500 to-purple-600 h-32 flex items-center justify-center">
-                <span className="text-6xl">{miembro.foto}</span>
+              <div className="mesa-directiva-card-header">
+                <span>{miembro.foto}</span>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">{miembro.nombre}</h3>
-                <p className="text-purple-600 font-semibold mt-1">{miembro.cargo}</p>
+                <p className="mesa-directiva-cargo">{miembro.cargo}</p>
                 <p className="text-gray-600 text-sm mt-1">{miembro.institucion}</p>
                 <p className="text-gray-600 text-xs mt-1">{miembro.especialidad}</p>
                 <p className="text-gray-600 mt-4">{miembro.bio}</p>
                 
                 <div className="mt-6 flex gap-2 justify-center">
-                  <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">
+                  <button className="mesa-directiva-btn-primary">
                     Email
                   </button>
-                  <button className="px-4 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300 text-sm">
+                  <button className="mesa-directiva-btn-secondary">
                     LinkedIn
                   </button>
                 </div>

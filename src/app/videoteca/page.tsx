@@ -1,5 +1,7 @@
 'use client'
 
+import './videoteca.css'
+
 export default function Videoteca() {
   const videos = [
     {
@@ -59,12 +61,12 @@ export default function Videoteca() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="videoteca-container">
       {/* Header */}
-      <div className="bg-gradient-to-r from-red-600 to-red-800 text-white py-12">
+      <div className="videoteca-header">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Videoteca</h1>
-          <p className="text-red-100 mt-2">Acceso a todas nuestras grabaciones</p>
+          <p className="videoteca-header-text">Acceso a todas nuestras grabaciones</p>
         </div>
       </div>
 
@@ -75,7 +77,7 @@ export default function Videoteca() {
           <input
             type="text"
             placeholder="Buscar videos..."
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
+            className="videoteca-search-input"
           />
         </div>
 
@@ -83,9 +85,9 @@ export default function Videoteca() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {videos.map((video) => (
             <div key={video.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-              <div className="bg-gradient-to-r from-red-500 to-red-600 h-40 flex items-center justify-center relative">
-                <span className="text-6xl">{video.thumbnail}</span>
-                <div className="absolute top-3 right-3 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs font-semibold">
+              <div className="videoteca-card-header">
+                <span>{video.thumbnail}</span>
+                <div className="videoteca-duration">
                   {video.duracion}
                 </div>
               </div>
@@ -98,7 +100,7 @@ export default function Videoteca() {
                   <p><strong>Fecha:</strong> {video.fecha}</p>
                 </div>
 
-                <button className="mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition-colors">
+                <button className="videoteca-watch-btn">
                   Ver Video
                 </button>
               </div>

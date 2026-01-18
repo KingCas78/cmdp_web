@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import './contacto.css'
 
 export default function Contacto() {
   const [formData, setFormData] = useState({
@@ -25,12 +26,12 @@ export default function Contacto() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="contacto-container">
       {/* Header */}
-      <div className="bg-gradient-to-r from-orange-600 to-orange-800 text-white py-12">
+      <div className="contacto-header">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Contacto</h1>
-          <p className="text-orange-100 mt-2">Te responderemos en la brevedad</p>
+          <p className="contacto-header-text">Te responderemos en la brevedad</p>
         </div>
       </div>
 
@@ -91,7 +92,7 @@ export default function Contacto() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Envíanos un Mensaje</h2>
               
               {enviado && (
-                <div className="mb-6 bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
+                <div className="contacto-success-alert">
                   ✓ Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto pronto.
                 </div>
               )}
@@ -107,7 +108,7 @@ export default function Contacto() {
                     onChange={handleChange}
                     required
                     placeholder="Tu nombre"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="contacto-input"
                   />
                 </div>
 
@@ -121,19 +122,20 @@ export default function Contacto() {
                     onChange={handleChange}
                     required
                     placeholder="tu.email@ejemplo.com"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="contacto-input"
                   />
                 </div>
 
                 {/* Asunto */}
                 <div>
-                  <label className="block text-gray-900 font-semibold mb-2">Asunto</label>
+                  <label htmlFor="asunto" className="block text-gray-900 font-semibold mb-2">Asunto</label>
                   <select
+                    id="asunto"
                     name="asunto"
                     value={formData.asunto}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="contacto-select"
                   >
                     <option value="">Selecciona un asunto</option>
                     <option value="consulta">Consulta General</option>
@@ -154,14 +156,14 @@ export default function Contacto() {
                     required
                     rows={6}
                     placeholder="Escribe tu mensaje aquí..."
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
+                    className="contacto-textarea"
                   />
                 </div>
 
                 {/* Botón */}
                 <button
                   type="submit"
-                  className="w-full bg-orange-600 text-white py-3 rounded-lg hover:bg-orange-700 transition-colors font-semibold"
+                  className="contacto-submit-btn"
                 >
                   Enviar Mensaje
                 </button>

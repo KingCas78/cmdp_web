@@ -1,0 +1,64 @@
+.contacto-container {
+  min-height: 100vh;
+  background-color: #F6F4EF;
+}
+
+.contacto-header {
+  background: linear-gradient(to right, #FFAB91, #FF9B7B);
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contacto-header-text {
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.contacto-input,
+.contacto-select,
+.contacto-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #D1D5DB;
+  font-size: 1rem;
+}
+
+.contacto-input:focus,
+.contacto-select:focus,
+.contacto-textarea:focus {
+  outline: none;
+  border-color: #FFAB91;
+  box-shadow: 0 0 0 2px rgba(255, 171, 145, 0.1);
+}
+
+.contacto-textarea {
+  resize: none;
+}
+
+.contacto-submit-btn {
+  width: 100%;
+  background-color: #FFAB91;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-submit-btn:hover {
+  background-color: #FF9B7B;
+}
+
+.contacto-success-alert {
+  margin-bottom: 1.5rem;
+  background-color: #F0FDF4;
+  border: 1px solid #86EFAC;
+  color: #166534;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}

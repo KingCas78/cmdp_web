@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import './blog.css'
 
 export default function Blog() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -61,12 +62,12 @@ export default function Blog() {
   const categorias = ['Todos', 'Dermatología', 'Acné', 'Micología', 'Oncología', 'Cosmética']
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="blog-container">
       {/* Header */}
-      <div className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white py-12">
+      <div className="blog-header">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Blog CMDP</h1>
-          <p className="text-indigo-100 mt-2">Artículos sobre dermatología pediátrica</p>
+          <p className="blog-header-text">Artículos sobre dermatología pediátrica</p>
         </div>
       </div>
 
@@ -79,7 +80,7 @@ export default function Blog() {
             placeholder="Buscar artículos..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="blog-search-input"
           />
         </div>
 
@@ -88,10 +89,10 @@ export default function Blog() {
           {categorias.map((cat) => (
             <button
               key={cat}
-              className={`px-4 py-2 rounded-lg whitespace-nowrap transition-colors ${
+              className={`blog-category-btn ${
                 cat === 'Todos'
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-white text-gray-700 border hover:bg-gray-100'
+                  ? 'blog-category-btn-active'
+                  : 'blog-category-btn-inactive'
               }`}
             >
               {cat}
@@ -103,12 +104,12 @@ export default function Blog() {
         <div className="space-y-6">
           {articulos.map((articulo) => (
             <article key={articulo.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden md:flex">
-              <div className="bg-gradient-to-br from-indigo-400 to-indigo-600 md:w-64 h-48 md:h-auto flex items-center justify-center flex-shrink-0">
-                <span className="text-6xl">{articulo.imagen}</span>
+              <div className="blog-article-image md:w-64 h-48 md:h-auto">
+                <span>{articulo.imagen}</span>
               </div>
               <div className="p-6 flex-1">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="inline-block px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">
+                  <span className="blog-category-badge">
                     {articulo.categoria}
                   </span>
                   <span className="text-gray-500 text-sm">{articulo.lecturaMin}</span>
@@ -120,7 +121,7 @@ export default function Blog() {
                     <p><strong>{articulo.autor}</strong></p>
                     <p>{articulo.fecha}</p>
                   </div>
-                  <button className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
+                  <button className="blog-read-btn">
                     Leer Más
                   </button>
                 </div>
