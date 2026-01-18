@@ -113,12 +113,12 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-6 section-title">No te pierdas el Congreso Nacional de Dermatología Pediátrica del 2026</h2>
-          <p className="text-lg card-text mb-8 max-w-3xl mx-auto text-blue-600">
+          <p className="text-lg mb-8 max-w-3xl mx-auto !text-blue-600">
             Únete a la celebración anual del colegio donde se reúnen los mejores expertos en dermatología pediátrica para compartir conocimiento, innovación y experiencias en el cuidado dermatológico infantil.
           </p>
           <a
             href="/cndp"
-            className="hero-btn-secondary"
+            className="hero-btn-primary"
           >
             Registrarse al Congreso
           </a>
@@ -131,14 +131,19 @@ export default function Home() {
         
         <div className="rounded-lg overflow-hidden shadow-lg">
           <div className="relative w-full video-container">
-            <iframe
+            {/* <iframe
               src="https://player.vimeo.com/video/YOUR_VIDEO_ID"
               className="absolute top-0 left-0 w-full h-full"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Video del Congreso Nacional de Dermatología Pediátrica 2025"
-            ></iframe>
+            ></iframe> */}
+            <img 
+              src="/images/reproductor.png" 
+              alt="Reproductor del Congreso Nacional de Dermatología Pediátrica 2025" 
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>
