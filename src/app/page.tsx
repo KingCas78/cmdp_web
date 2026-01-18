@@ -113,7 +113,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-6 section-title">No te pierdas el Congreso Nacional de Dermatología Pediátrica del 2026</h2>
-          <p className="text-lg mb-8 max-w-3xl mx-auto !text-blue-600">
+          <p className="text-center mb-12 max-w-2xl mx-auto section-title">
             Únete a la celebración anual del colegio donde se reúnen los mejores expertos en dermatología pediátrica para compartir conocimiento, innovación y experiencias en el cuidado dermatológico infantil.
           </p>
           <a
@@ -142,7 +142,7 @@ export default function Home() {
             <img 
               src="/images/reproductor.png" 
               alt="Reproductor del Congreso Nacional de Dermatología Pediátrica 2025" 
-              className="w-full h-auto"
+              className="w-1/2 h-auto mx-auto"
             />
           </div>
         </div>
