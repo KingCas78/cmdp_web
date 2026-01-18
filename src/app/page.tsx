@@ -76,7 +76,7 @@ export default function Home() {
       {/* Características */}
       <div className="py-16 section-bg-sky" data-aos="fade-in">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center section-title" data-aos="fade-down">Lo que hacemos</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center section-title" data-aos="fade-down">Quienes somos</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Columna izquierda: Carta de Mesa Directiva */}
@@ -111,41 +111,17 @@ export default function Home() {
 
       {/* Últimas Actividades */}
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold mb-12 text-center section-title">Próximas Sesiones y Eventos</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="rounded-lg shadow-sm p-6 card-bg card-border">
-            <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3 card-badge">
-              Webinar
-            </span>
-            <h3 className="text-xl font-bold mb-2 card-title">Conferencias Magistrales</h3>
-            <p className="text-sm mb-4 card-text">
-              Explora nuestras conferencias magistrales impartidas por expertos en dermatología pediátrica.
-            </p>
-            <p className="text-xs card-title">📅 Próxima: Enero 2026</p>
-          </div>
-
-          <div className="rounded-lg shadow-sm p-6 card-bg card-border">
-            <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3 card-badge">
-              Galería
-            </span>
-            <h3 className="text-xl font-bold mb-2 card-title">Congresos y Eventos</h3>
-            <p className="text-sm mb-4 card-text">
-              Revive los momentos especiales de nuestros congresos nacionales
-            </p>
-            <p className="text-xs card-title">📸 Galería disponible</p>
-          </div>
-
-          <div className="rounded-lg shadow-sm p-6 card-bg card-border">
-            <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3 card-badge">
-              Blog
-            </span>
-            <h3 className="text-xl font-bold mb-2 card-title">Artículos y Noticias</h3>
-            <p className="text-sm mb-4 card-text">
-              Exploramos las tendencias que definen el futuro de la dermatología pediátrica
-            </p>
-            <p className="text-xs card-title">📝 Artículos recientes</p>
-          </div>
+        <div className="text-center">
+          <h2 className="text-4xl font-bold mb-6 section-title">No te pierdas el Congreso Nacional de Dermatología Pediátrica del 2026</h2>
+          <p className="text-lg card-text mb-8 max-w-3xl mx-auto">
+            Únete a la celebración anual del colegio donde se reúnen los mejores expertos en dermatología pediátrica para compartir conocimiento, innovación y experiencias en el cuidado dermatológico infantil.
+          </p>
+          <a
+            href="/cndp"
+            className="hero-btn-primary"
+          >
+            Registrarse al Congreso
+          </a>
         </div>
       </div>
 
