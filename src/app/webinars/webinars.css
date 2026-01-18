@@ -1,0 +1,38 @@
+.webinars-container {
+  min-height: 100vh;
+  background-color: #F48FB1;
+}
+
+.webinars-header {
+  background-color: #F48FB1;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.webinars-header-text {
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.webinars-card-header {
+  height: 8rem;
+  background-color: #F48FB1;
+}
+
+.webinars-register-btn {
+  background-color: #F48FB1;
+  color: white;
+  margin-top: 1.5rem;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.webinars-register-btn:hover {
+  background-color: #E367A1;
+}
