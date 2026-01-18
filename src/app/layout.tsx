@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Slider from "@/components/Slider";
 import Footer from "@/components/Footer";
+import AOSInit from "@/components/AOSInit";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,8 @@ export default function RootLayout({
     <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      >AOSInit />
+        <
         <TopBar />
         <Header />
         <Navbar />

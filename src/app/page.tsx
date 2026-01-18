@@ -52,6 +52,8 @@ export default function Home() {
               key={idx}
               href={seccion.href}
               className="rounded-lg shadow-md hover:shadow-lg transition-all hover:-translate-y-2 p-6 block group card-bg"
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
             >
               <div className="relative w-full h-40 mb-4 rounded-lg flex items-center justify-center section-bg-sky">
                 <img
@@ -72,26 +74,26 @@ export default function Home() {
       </div>
 
       {/* Características */}
-      <div className="py-16 section-bg-sky">
+      <div className="py-16 section-bg-sky" data-aos="fade-in">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center section-title">Lo que hacemos</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center section-title" data-aos="fade-down">Lo que hacemos</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center rounded-lg p-8 card-bg">
+            <div className="text-center rounded-lg p-8 card-bg" data-aos="zoom-in" data-aos-delay="0">
               <img src="/images/capacitacion.png" alt="Capacitación" className="w-16 h-16 mx-auto mb-4 object-contain" />
               <h3 className="text-xl font-bold mb-3 card-title">Capacitación Continua</h3>
               <p className="card-text">
                 Acceso a webinars, talleres y conferencias con expertos en dermatología pediátrica.
               </p>
             </div>
-            <div className="text-center rounded-lg p-8 card-bg">
+            <div className="text-center rounded-lg p-8 card-bg" data-aos="zoom-in" data-aos-delay="100">
               <img src="/images/comunidad.png" alt="Comunidad" className="w-16 h-16 mx-auto mb-4 object-contain" />
               <h3 className="text-xl font-bold mb-3 card-title">Comunidad</h3>
               <p className="card-text">
                 Conecta con otros dermatólogos pediatras y profesionales del sector.
               </p>
             </div>
-            <div className="text-center rounded-lg p-8 card-bg">
+            <div className="text-center rounded-lg p-8 card-bg" data-aos="zoom-in" data-aos-delay="200">
               <img src="/images/actualizaciones.png" alt="Actualizaciones" className="w-16 h-16 mx-auto mb-4 object-contain" />
               <h3 className="text-xl font-bold mb-3 card-title">Actualizaciones</h3>
               <p className="card-text">
