@@ -56,7 +56,7 @@ export default function Webinars() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Filtros */}
         <div className="flex gap-4 mb-8">
-          <button className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+          <button className="webinars-filter-btn">
             Todos
           </button>
           <button className="px-6 py-2 bg-white text-gray-700 rounded-lg hover:bg-gray-100 border">
