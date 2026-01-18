@@ -78,27 +78,32 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold mb-12 text-center section-title" data-aos="fade-down">Lo que hacemos</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center rounded-lg p-8 card-bg" data-aos="zoom-in" data-aos-delay="0">
-              <img src="/images/capacitacion.png" alt="Capacitación" className="w-16 h-16 mx-auto mb-4 object-contain" />
-              <h3 className="text-xl font-bold mb-3 card-title">Capacitación Continua</h3>
-              <p className="card-text">
-                Acceso a webinars, talleres y conferencias con expertos en dermatología pediátrica.
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            {/* Columna izquierda: Carta de Mesa Directiva */}
+            <div className="rounded-lg p-8 card-bg shadow-lg" data-aos="fade-right">
+              <h3 className="text-2xl font-bold mb-4 card-title">Mensaje de la Mesa Directiva</h3>
+              <p className="card-text mb-4 leading-relaxed">
+                El Colegio Mexicano de Dermatología Pediátrica se dedica a promover la excelencia en el cuidado dermatológico de nuestros niños. 
               </p>
+              <p className="card-text mb-4 leading-relaxed">
+                Nos comprometemos a ofrecer capacitación continua, facilitar la colaboración entre profesionales y mantenernos a la vanguardia de los avances científicos en dermatología pediátrica.
+              </p>
+              <p className="card-text mb-6 leading-relaxed">
+                Juntos, construimos una comunidad dedicada a mejorar la salud dermatológica de los menores en México.
+              </p>
+              <div className="pt-4 border-t border-gray-300">
+                <p className="font-semibold card-title">Mesa Directiva</p>
+                <p className="text-sm card-text">Colegio Mexicano de Dermatología Pediátrica A.C.</p>
+              </div>
             </div>
-            <div className="text-center rounded-lg p-8 card-bg" data-aos="zoom-in" data-aos-delay="100">
-              <img src="/images/comunidad.png" alt="Comunidad" className="w-16 h-16 mx-auto mb-4 object-contain" />
-              <h3 className="text-xl font-bold mb-3 card-title">Comunidad</h3>
-              <p className="card-text">
-                Conecta con otros dermatólogos pediatras y profesionales del sector.
-              </p>
-            </div>
-            <div className="text-center rounded-lg p-8 card-bg" data-aos="zoom-in" data-aos-delay="200">
-              <img src="/images/actualizaciones.png" alt="Actualizaciones" className="w-16 h-16 mx-auto mb-4 object-contain" />
-              <h3 className="text-xl font-bold mb-3 card-title">Actualizaciones</h3>
-              <p className="card-text">
-                Congresos sobre avances y tendencias en dermatología pediátrica.
-              </p>
+
+            {/* Columna derecha: Imagen Fotográfica */}
+            <div className="rounded-lg overflow-hidden shadow-lg h-full min-h-96" data-aos="fade-left">
+              <img 
+                src="/images/mesa-directiva.jpg" 
+                alt="Mesa Directiva" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
