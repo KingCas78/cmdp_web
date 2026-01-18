@@ -172,8 +172,7 @@
 }
 
 .card-badge {
-  background-color: var(--sky-blue);
-  color: var(--grayish-blue);
+   color: var(--grayish-blue);
 }
 
 /* CTA Section Styles */

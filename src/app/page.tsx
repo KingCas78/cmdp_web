@@ -1,7 +1,5 @@
 'use client'
 
-import Image from 'next/image'
-
 export default function Home() {
   const seccionesNav = [
     { nombre: 'Inicio', href: '/', imagen: '/images/Logo_CMDP.png' },
@@ -56,11 +54,10 @@ export default function Home() {
               className="rounded-lg shadow-md hover:shadow-lg transition-all hover:-translate-y-2 p-6 block group card-bg"
             >
               <div className="relative w-full h-40 mb-4 rounded-lg flex items-center justify-center section-bg-sky">
-                <Image
+                <img
                   src={seccion.imagen}
                   alt={seccion.nombre}
-                  fill
-                  className="object-contain p-4"
+                  className="max-h-full max-w-full object-contain p-4"
                 />
               </div>
               <h3 className="text-xl font-bold transition-colors group-hover:text-blue-600 card-title">
