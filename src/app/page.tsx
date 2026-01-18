@@ -118,7 +118,7 @@ export default function Home() {
           </p>
           <a
             href="/cndp"
-            className="hero-btn-primary"
+            className="hero-btn-secondary"
           >
             Registrarse al Congreso
           </a>
