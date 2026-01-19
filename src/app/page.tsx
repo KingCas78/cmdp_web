@@ -1,5 +1,7 @@
 'use client'
 
+import Slider from '@/components/Slider'
+
 export default function Home() {
   const seccionesNav = [
     { nombre: 'Inicio', href: '/', imagen: '/images/Logo_CMDP.png' },
@@ -15,6 +17,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen page-bg">
+      {/* Slider */}
+      <Slider isVisible={true} />
+
       {/* Hero Section */}
       <div className="text-white py-20 hero-gradient">
         <div className="max-w-7xl mx-auto px-4 text-center">
@@ -38,7 +43,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      
       {/* Secciones Principales */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold mb-4 text-center section-title">Conoce Nuestro Sitio</h2>
@@ -118,13 +123,14 @@ export default function Home() {
           </p>
           <a
             href="/cndp"
-            className="hero-btn-secondary"
+            className="btn btn-primary"
           >
             Informes del Congreso
           </a>
         </div>
       </div>
-
+      {/* Divider */}
+        <div className="footer-divider pt-8"></div>
       {/* Video CNDP 2025 */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold mb-12 text-center section-title">Así se vivió el CNDP 2025</h2>

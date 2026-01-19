@@ -43,7 +43,7 @@ export default function Webinars() {
   return (
     <div className="webinars-container">
       {/* Header */}
-      <div className="webinars-header">
+      <div className="hero-gradient text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Webinars</h1>
           <p className="webinars-header-text">Aprende de expertos en tu industria</p>
