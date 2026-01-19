@@ -1,7 +1,5 @@
 'use client'
 
-import './webinars.css'
-
 export default function Webinars() {
   const webinars = [
     {

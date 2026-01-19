@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import './blog.css'
 
 export default function Blog() {
   const [searchTerm, setSearchTerm] = useState('')

@@ -1,7 +1,5 @@
 'use client'
 
-import './mesa-directiva.css'
-
 export default function MesaDirectiva() {
   const miembros = [
     {

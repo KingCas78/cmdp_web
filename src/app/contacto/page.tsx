@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import './contacto.css'
 
 export default function Contacto() {
   const [formData, setFormData] = useState({

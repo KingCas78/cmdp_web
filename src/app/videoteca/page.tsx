@@ -1,7 +1,5 @@
 'use client'
 
-import './videoteca.css'
-
 export default function Videoteca() {
   const videos = [
     {
