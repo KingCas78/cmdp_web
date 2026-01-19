@@ -320,10 +320,8 @@
 
 /* Encabezado de tarjeta */
 .card-header {
-  height: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   height: 4rem;
+  background-color: var(--powder-blue);
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
