@@ -51,9 +51,9 @@ export default function Galeria() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen page-bg">
       {/* Header */}
-      <div className="bg-gradient-to-r from-green-600 to-green-800 text-white py-12">
+      <div className="hero-gradient text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Galería Fotográfica</h1>
           <p className="text-green-100 mt-2">Momentos destacados de nuestras actividades</p>

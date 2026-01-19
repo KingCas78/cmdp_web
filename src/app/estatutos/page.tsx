@@ -2,9 +2,9 @@
 
 export default function Estatutos() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen page-bg">
       {/* Header */}
-      <div className="bg-gradient-to-r from-gray-700 to-gray-900 text-white py-12">
+      <div className="hero-gradient text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Estatutos Sociales</h1>
           <p className="text-gray-300 mt-2">Marco normativo y regulatorio de nuestra organización</p>
