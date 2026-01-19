@@ -1,7 +1,7 @@
 /* Color Palette */
 :root {
   --sky-blue: #CFE9F5;
-  --powder-blue: #056e9f;
+  --powder-blue: #B7D7E8;
   --grayish-blue: #9FB7C9;
   --soft-ivory: #F6F4EF;
   --pearl-gray: #E3E7EA;
@@ -81,12 +81,12 @@
 
 /* Footer Styles */
 .footer-bg {
-  background-color: var(--powder-blue);
-  color: #E3E7EA;
+  background-color: var(--sky-blue);
+  color: #2C2C2C;
 }
 
 .footer-title {
-  color: #E3E7EA;
+  color: var(--grayish-blue);
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -96,13 +96,13 @@
 }
 
 .footer-link {
-  color: #E3E7EA;
+  color: var(--pastel-gold);
   transition: color 0.3s ease;
   cursor: pointer;
 }
 
 .footer-link:hover {
-  color: white;
+  color: var(--grayish-blue);
 }
 
 /* Home Page Styles */
@@ -117,11 +117,10 @@
 .hero-btn-primary {
   display: inline-block;
   background-color: var(--soft-ivory);
-  color: #1b408b;
+  color: var(--grayish-blue);
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
   font-weight: 600;
-  font: var(--font-btn);
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -129,16 +128,17 @@
 }
 
 .hero-btn-primary:hover {
-  background-color: #d4c299;
+  background-color: var(--pearl-gray);
 }
 
 .hero-btn-secondary {
   display: inline-block;
   background-color: var(--powder-blue);
-  color: white;
+  corder: 2px solid var(--soft-ivory);
+  color: var(--soft-ivory);
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
-  border: none;
+  background-color: transparent;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -146,8 +146,8 @@
 }
 
 .hero-btn-secondary:hover {
-  background-color: #044d6f;
-}
+  background-color: var(--lavender-gray);
+  border-color: var(--lavender-gray)
 
 /* Section Styles */
 .section-bg-sky {
@@ -155,7 +155,7 @@
 }
 
 .section-title {
-  color: #1b408b;
+  color: var(--grayish-blue);
 }
 
 .card-bg {
@@ -168,11 +168,12 @@
 }
 
 .card-text {
-  color: white;
+  color: #2C2C2C;
 }
 
 .card-badge {
-   color: white;
+  background-color: var(--lavender-gray);
+  color: var(--grayish-blue);
 }
 
 /* CTA Section Styles */
@@ -182,11 +183,10 @@
 
 .cta-btn {
   display: inline-block;
-  background-color: var(--soft-ivory);
-  color: #1b408b;
+  backgrovar(--grayish-blue);
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
-  font-weight: 600;
+  font-weight: 600
   font: var(--font-btn);
   border: none;
   cursor: pointer;
