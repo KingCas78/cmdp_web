@@ -134,7 +134,7 @@
 .hero-btn-secondary {
   display: inline-block;
   background-color: var(--powder-blue);
-  corder: 2px solid var(--soft-ivory);
+  border: 2px solid var(--soft-ivory);
   color: var(--soft-ivory);
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
@@ -307,8 +307,8 @@
 
 /* Card/Tarjeta genérica */
 .card {
-  rounded-lg: true;
-  shadow-md: true;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   background-color: var(--powder-blue);
   border: 1px solid var(--pearl-gray);
