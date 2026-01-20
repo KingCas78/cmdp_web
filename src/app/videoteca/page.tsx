@@ -8,8 +8,8 @@ export default function Videoteca() {
       descripcion: 'Charla sobre las últimas tendencias tecnológicas',
       fecha: 'Enero 8, 2026',
       speaker: 'Dr. Juan Martínez',
-      duracion: '45 min',
-      thumbnail: '🎥'
+      thumbnail: 'https://via.placeholder.com/400x225',
+      duracion: '45:32',
     },
     {
       id: 2,
@@ -17,8 +17,8 @@ export default function Videoteca() {
       descripcion: 'Estrategias de liderazgo en el siglo XXI',
       fecha: 'Enero 5, 2026',
       speaker: 'Patricia García',
-      duracion: '52 min',
-      thumbnail: '🎥'
+      thumbnail: 'https://via.placeholder.com/400x225',
+      duracion: '38:15',
     },
     {
       id: 3,
@@ -26,8 +26,8 @@ export default function Videoteca() {
       descripcion: 'Cómo implementar prácticas sustentables',
       fecha: 'Diciembre 28, 2025',
       speaker: 'Ing. Carlos López',
-      duracion: '38 min',
-      thumbnail: '🎥'
+      thumbnail: 'https://via.placeholder.com/400x225',
+      duracion: '52:47',
     },
     {
       id: 4,
@@ -35,8 +35,8 @@ export default function Videoteca() {
       descripcion: 'Guía completa para la transformación digital',
       fecha: 'Diciembre 20, 2025',
       speaker: 'Lic. Sandra Rodríguez',
-      duracion: '48 min',
-      thumbnail: '🎥'
+      thumbnail: 'https://via.placeholder.com/400x225',
+      duracion: '41:20',
     },
     {
       id: 5,
@@ -44,8 +44,8 @@ export default function Videoteca() {
       descripcion: 'Cómo convertir tu idea en negocio',
       fecha: 'Diciembre 15, 2025',
       speaker: 'Mg. Fernando Díaz',
-      duracion: '55 min',
-      thumbnail: '🎥'
+      thumbnail: 'https://via.placeholder.com/400x225',
+      duracion: '36:08',
     },
     {
       id: 6,
@@ -53,15 +53,15 @@ export default function Videoteca() {
       descripcion: 'Finanzas personales y empresariales',
       fecha: 'Diciembre 10, 2025',
       speaker: 'Cr. Elena Flores',
-      duracion: '41 min',
-      thumbnail: '🎥'
+      thumbnail: 'https://via.placeholder.com/400x225',
+      duracion: '44:55',
     }
   ]
 
   return (
     <div className="videoteca-container">
       {/* Header */}
-      <div className="videoteca-header">
+      <div className="hero-gradient text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Videoteca</h1>
           <p className="videoteca-header-text">Acceso a todas nuestras grabaciones</p>
@@ -83,7 +83,7 @@ export default function Videoteca() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {videos.map((video) => (
             <div key={video.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-              <div className="videoteca-card-header">
+              <div className="card-header">
                 <span>{video.thumbnail}</span>
                 <div className="videoteca-duration">
                   {video.duracion}

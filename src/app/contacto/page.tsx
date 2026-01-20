@@ -27,7 +27,7 @@ export default function Contacto() {
   return (
     <div className="contacto-container">
       {/* Header */}
-      <div className="contacto-header">
+     <div className="hero-gradient text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Contacto</h1>
           <p className="contacto-header-text">Te responderemos en la brevedad</p>
@@ -40,7 +40,7 @@ export default function Contacto() {
           {/* Información de Contacto */}
           <div className="lg:col-span-1 space-y-6">
             {/* Teléfono */}
-            <div className="bg-white rounded-lg shadow-md p-6">
+            <div className="bg-sky-100 rounded-lg shadow-md p-6">
               <div className="text-3xl mb-4">📱</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Teléfono</h3>
               <p className="text-gray-600">+58 212 1234567</p>
@@ -48,7 +48,7 @@ export default function Contacto() {
             </div>
 
             {/* Email */}
-            <div className="bg-white rounded-lg shadow-md p-6">
+            <div className="bg-sky-100 rounded-lg shadow-md p-6">
               <div className="text-3xl mb-4">✉️</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Correo Electrónico</h3>
               <p className="text-gray-600">info@cmdp.org</p>
@@ -56,7 +56,7 @@ export default function Contacto() {
             </div>
 
             {/* Dirección */}
-            <div className="bg-white rounded-lg shadow-md p-6">
+            <div className="bg-sky-100 rounded-lg shadow-md p-6">
               <div className="text-3xl mb-4">📍</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Dirección</h3>
               <p className="text-gray-600">
@@ -69,7 +69,7 @@ export default function Contacto() {
             </div>
 
             {/* Horario */}
-            <div className="bg-white rounded-lg shadow-md p-6">
+            <div className="bg-sky-100 rounded-lg shadow-md p-6">
               <div className="text-3xl mb-4">⏰</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Horario</h3>
               <p className="text-gray-600">
@@ -162,7 +162,7 @@ export default function Contacto() {
                 {/* Botón */}
                 <button
                   type="submit"
-                  className="contacto-submit-btn"
+                  className="contacto-btn-submit"
                 >
                   Enviar Mensaje
                 </button>

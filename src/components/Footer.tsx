@@ -44,7 +44,7 @@ export default function Footer() {
             <h4 className="footer-title">Contacto</h4>
             <ul className="space-y-2 text-sm">
               <li>📱 +52 </li>
-              <li>✉️ col.mex.derma.pediao@gmail.com</li>
+              <li>✉️ col.mex.derma.pedia@gmail.com</li>
               <li>📍 México</li>
               <li className="pt-2">
                 <a href="/contacto" className="footer-link">

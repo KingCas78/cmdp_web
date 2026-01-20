@@ -61,7 +61,7 @@ export default function MesaDirectiva() {
   return (
     <div className="mesa-directiva-container">
       {/* Header */}
-      <div className="mesa-directiva-header">
+      <div className="hero-gradient text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Mesa Directiva</h1>
           <p className="mesa-directiva-header-text">Conoce a nuestros líderes</p>
@@ -71,18 +71,18 @@ export default function MesaDirectiva() {
       {/* Contenido */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Nuestro equipo está compuesto por profesionales experimentados comprometidos 
-          con el desarrollo y crecimiento de la comunidad empresarial.
+          Nuestra Mesa Directiva está compuesta por dermatólogas pediatras comprometidas .
         </p>
 
         {/* Grid de Miembros */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {miembros.map((miembro) => (
             <div key={miembro.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden text-center">
-              <div className="mesa-directiva-card-header">
-                <span>{miembro.foto}</span>
-              </div>
+              <div className="card-header"></div>
               <div className="p-6">
+                <div className="mesa-directiva-card-header">
+                  <span>{miembro.foto}</span>
+                </div>
                 <h3 className="text-xl font-bold text-gray-900">{miembro.nombre}</h3>
                 <p className="mesa-directiva-cargo">{miembro.cargo}</p>
                 <p className="text-gray-600 text-sm mt-1">{miembro.institucion}</p>

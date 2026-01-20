@@ -63,7 +63,7 @@ export default function Blog() {
   return (
     <div className="blog-container">
       {/* Header */}
-      <div className="blog-header">
+      <div className="hero-gradient text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Blog CMDP</h1>
           <p className="blog-header-text">Artículos sobre dermatología pediátrica</p>
@@ -79,7 +79,7 @@ export default function Blog() {
             placeholder="Buscar artículos..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="blog-search-input"
+            className="search-input"
           />
         </div>
 
