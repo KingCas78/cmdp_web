@@ -15,7 +15,7 @@ export default function CNDP() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Sección Introducción */}
         <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Bienvenida</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Bienvenidos</h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-4">
             El Colegio Mexicano de Dermatología Pediátrica A.C. (CMDP) es una asociación civil sin fines de lucro que agrupa a los dermatólogos pediatras más destacados de México. 
           </p>
