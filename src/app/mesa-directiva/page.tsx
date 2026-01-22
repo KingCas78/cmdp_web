@@ -4,7 +4,7 @@ export default function MesaDirectiva() {
   const miembros = [
     {
       id: 1,
-      nombre: 'Dra. Rosa María Martínez López',
+      nombre: 'Dra. Jessica Aranda Mendoza',
       cargo: 'Presidenta',
       especialidad: 'Dermatología Pediátrica',
       institucion: 'Instituto Nacional de Pediatría',
@@ -13,50 +13,32 @@ export default function MesaDirectiva() {
     },
     {
       id: 2,
-      nombre: 'Dr. Carlos Alberto García Ruiz',
-      cargo: 'Vicepresidente',
+      nombre: 'Dra. María del Mar Sáez de Ocariz Gutiérrez',
+      cargo: 'Vicepresidenta',
       especialidad: 'Dermatología Pediátrica',
-      institucion: 'Hospital Infantil de México',
+      institucion: 'Instituto Nacional de Pediatría',
       bio: 'Líder en investigación de dermatitis atópica pediátrica',
       foto: '👨‍⚕️'
     },
     {
       id: 3,
-      nombre: 'Dra. Alejandra Ruiz Sánchez',
+      nombre: 'Dra. Laura Isabel Ramos Gomez',
       cargo: 'Secretaria',
       especialidad: 'Dermatología Pediátrica',
-      institucion: 'UNAM - Facultad de Medicina',
+      institucion: 'Instituto Nacional de Pediatría',
       bio: 'Docente y investigadora en oncología dermatológica pediátrica',
       foto: '👩‍⚕️'
     },
     {
       id: 4,
-      nombre: 'Dr. Miguel Ángel Torres Navarro',
-      cargo: 'Tesorero',
+      nombre: 'Dra. Leticia Lara Mendoza',
+      cargo: 'Tesorera',
       especialidad: 'Dermatología Pediátrica',
-      institucion: 'Clínica Dermatológica México',
+      institucion: 'Instituto Nacional de Pediatría',
       bio: 'Especialista en dermatología cosmética pediátrica',
       foto: '👨‍⚕️'
     },
-    {
-      id: 5,
-      nombre: 'Dra. Patricia González López',
-      cargo: 'Vocal 1',
-      especialidad: 'Dermatología Pediátrica',
-      institucion: 'Hospital Regional Pediátrico',
-      bio: 'Experta en infecciones dermatológicas pediátricas',
-      foto: '👩‍⚕️'
-    },
-    {
-      id: 6,
-      nombre: 'Dr. Fernando López Ruiz',
-      cargo: 'Vocal 2',
-      especialidad: 'Dermatología Pediátrica',
-      institucion: 'Centro Médico Dermatológico',
-      bio: 'Investigador en nuevas terapias dermatológicas',
-      foto: '👨‍⚕️'
-    }
-  ]
+      ]
 
   return (
     <div className="mesa-directiva-container">

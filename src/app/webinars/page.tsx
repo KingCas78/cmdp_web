@@ -4,38 +4,38 @@ export default function Webinars() {
   const webinars = [
     {
       id: 1,
-      titulo: 'Webinar: Dermatología Pediátrica - Casos Clínicos',
-      fecha: '15 de Enero 2026',
-      hora: '10:00 AM',
-      descripcion: 'Presentación de casos clínicos complejos en dermatología pediátrica y su manejo.',
-      disertante: 'Dra. Rosa Martínez',
+      titulo: 'Trabajos de ingreso',
+      fecha: '26 de Enero 2026',
+      hora: '8:30 PM',
+      descripcion: 'Título del trabajo de igreso',
+      disertante: 'Candidato de trabajo de ingreso',
       estado: 'Próximo'
     },
     {
       id: 2,
-      titulo: 'Webinar: Novedades en Tratamientos Biológicos',
-      fecha: '22 de Enero 2026',
-      hora: '2:00 PM',
-      descripcion: 'Uso de terapias biológicas en dermatología pediátrica: indicaciones y resultados.',
-      disertante: 'Dr. Miguel Ángel García',
+      titulo: 'Webinar: Tema',
+      fecha: '9 de febrero 2026',
+      hora: '8:30 PM',
+      descripcion: 'Descripción del webinar sobre el tema.',
+      disertante: 'ponente',
       estado: 'Próximo'
     },
     {
       id: 3,
-      titulo: 'Webinar: Seguridad Dermatológica en Menores',
-      fecha: '29 de Enero 2026',
-      hora: '11:00 AM',
-      descripcion: 'Consideraciones especiales de seguridad en el tratamiento dermatológico pediátrico.',
-      disertante: 'Dra. Alejandra Ruiz',
+      titulo: 'Trabajos de ingreso',
+      fecha: '23 de febrero 2026',
+      hora: '8:30 AM',
+      descripcion: 'Título del trabajo de igreso',
+      disertante: 'Candidato de trabajo de ingreso',
       estado: 'Próximo'
     },
     {
       id: 4,
-      titulo: 'Webinar: Psicosomática en Dermatología Infantil',
-      fecha: '8 de Enero 2026',
-      hora: '3:00 PM',
-      descripcion: 'Impacto psicológico de las enfermedades dermatológicas en niños y adolescentes.',
-      disertante: 'Dr. Carlos López',
+      titulo: 'Webinar: Tema',
+      fecha: '9 de marzo 2026',
+      hora: '8:30 PM',
+      descripcion: 'Descripción del webinar sobre el tema.',
+      disertante: 'Ponente',
       estado: 'Registrado'
     }
   ]
@@ -46,7 +46,7 @@ export default function Webinars() {
       <div className="hero-gradient text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Webinars</h1>
-          <p className="webinars-header-text">Aprende de expertos en tu industria</p>
+          <p className="webinars-header-text">Educación Continua en Dermatología Pediátrica</p>
         </div>
       </div>
 
@@ -88,7 +88,7 @@ export default function Webinars() {
                 </div>
 
                 <button className="webinars-register-btn">
-                  Registrarse
+                  Ingresa
                 </button>
               </div>
             </div>
