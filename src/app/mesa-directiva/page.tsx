@@ -1,6 +1,19 @@
 'use client'
 
+import Image from 'next/image'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default function MesaDirectiva() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true,
+    })
+  }, [])
   const miembros = [
     {
       id: 1,
@@ -8,8 +21,8 @@ export default function MesaDirectiva() {
       cargo: 'Presidenta',
       especialidad: 'Dermatología Pediátrica',
       institucion: 'Instituto Nacional de Pediatría',
-      bio: 'Especialista con 25 años de experiencia en dermatología pediátrica',
-      foto: '👩‍⚕️'
+      bio: 'Dermatóloga Pediatra con amplia experiencia en el manejo de patología de la PIEL, PELO y UÑAS en NIÑOS y ADOLESCENTES',
+      foto: '/images/team/dra-jessica-aranda.webp'
     },
     {
       id: 2,
@@ -18,7 +31,7 @@ export default function MesaDirectiva() {
       especialidad: 'Dermatología Pediátrica',
       institucion: 'Instituto Nacional de Pediatría',
       bio: 'Líder en investigación de dermatitis atópica pediátrica',
-      foto: '👨‍⚕️'
+      foto: '/images/team/dra-maria-sáez.webp'
     },
     {
       id: 3,
@@ -26,8 +39,8 @@ export default function MesaDirectiva() {
       cargo: 'Secretaria',
       especialidad: 'Dermatología Pediátrica',
       institucion: 'Instituto Nacional de Pediatría',
-      bio: 'Docente y investigadora en oncología dermatológica pediátrica',
-      foto: '👩‍⚕️'
+      bio: 'Especialista en Dermatitis atópica, dermatoscopia, hemangiomas. Docente de dermatológica pediátrica',
+      foto: '/images/team/dra-laura-ramos.webp'
     },
     {
       id: 4,
@@ -35,35 +48,47 @@ export default function MesaDirectiva() {
       cargo: 'Tesorera',
       especialidad: 'Dermatología Pediátrica',
       institucion: 'Instituto Nacional de Pediatría',
-      bio: 'Especialista en dermatología cosmética pediátrica',
-      foto: '👨‍⚕️'
+      bio: 'Especialista en dermatología pediátrica',
+      foto: '/images/team/dra-leticia-lara.webp'
     },
       ]
 
   return (
     <div className="mesa-directiva-container">
       {/* Header */}
-      <div className="hero-gradient text-white py-12">
+      <div className="hero-gradient text-white py-12" data-aos="fade-down">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Mesa Directiva</h1>
-          <p className="mesa-directiva-header-text">Conoce a nuestros líderes</p>
+          <p className="mesa-directiva-header-text">Conócenos</p>
         </div>
       </div>
 
       {/* Contenido */}
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Nuestra Mesa Directiva está compuesta por dermatólogas pediatras comprometidas .
+        <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto" data-aos="fade-up">
+          Nuestra Mesa Directiva está compuesta por dermatólogas pediatras comprometidas con el bienestar y la salud de los niños.
         </p>
 
         {/* Grid de Miembros */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {miembros.map((miembro) => (
-            <div key={miembro.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden text-center">
+            <div 
+              key={miembro.id} 
+              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden text-center"
+              data-aos="zoom-in"
+              data-aos-delay={`${(miembro.id - 1) * 100}`}
+            >
               <div className="card-header"></div>
               <div className="p-6">
                 <div className="mesa-directiva-card-header">
-                  <span>{miembro.foto}</span>
+                  <Image
+                    src={miembro.foto}
+                    alt={miembro.nombre}
+                    width={400}
+                    height={400}
+                    className="rounded-lg"
+                    priority={false}
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">{miembro.nombre}</h3>
                 <p className="mesa-directiva-cargo">{miembro.cargo}</p>

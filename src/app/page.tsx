@@ -135,21 +135,11 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold mb-12 text-center section-title">Así se vivió el CNDP 2025</h2>
         
-        <div className="rounded-lg overflow-hidden shadow-lg">
-          <div className="relative w-full video-container">
-            {/* <iframe
-              src="https://player.vimeo.com/video/YOUR_VIDEO_ID"
-              className="absolute top-0 left-0 w-full h-full"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title="Video del Congreso Nacional de Dermatología Pediátrica 2025"
-            ></iframe> */}
-            <img 
-              src="/images/reproductor.png" 
-              alt="Reproductor del Congreso Nacional de Dermatología Pediátrica 2025" 
-              className="w-1/2 h-auto mx-auto"
-            />
+        <div className="flex justify-center">
+          <div className="rounded-lg overflow-hidden shadow-lg w-full max-w-4xl">
+            <div className="video-responsive">
+            <div className="vimeo-wrapper"><iframe src="https://player.vimeo.com/video/1158253418?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" className="vimeo-iframe" title="Clausura 2"></iframe></div>
+            </div>
           </div>
         </div>
       </div>

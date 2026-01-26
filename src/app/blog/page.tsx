@@ -1,9 +1,20 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Blog() {
   const [searchTerm, setSearchTerm] = useState('')
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true,
+    })
+  }, [])
 
   const articulos = [
     {
@@ -63,7 +74,7 @@ export default function Blog() {
   return (
     <div className="blog-container">
       {/* Header */}
-      <div className="hero-gradient text-white py-12">
+      <div className="hero-gradient text-white py-12" data-aos="fade-down">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Blog CMDP</h1>
           <p className="blog-header-text">Artículos sobre dermatología pediátrica</p>
@@ -84,7 +95,7 @@ export default function Blog() {
         </div>
 
         {/* Categorías */}
-        <div className="flex gap-2 mb-8 overflow-x-auto pb-2">
+        <div className="flex gap-2 mb-8 overflow-x-auto pb-2" data-aos="fade-up">
           {categorias.map((cat) => (
             <button
               key={cat}
@@ -101,8 +112,13 @@ export default function Blog() {
 
         {/* Grid de Artículos */}
         <div className="space-y-6">
-          {articulos.map((articulo) => (
-            <article key={articulo.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden md:flex">
+          {articulos.map((articulo, index) => (
+            <article
+              key={articulo.id}
+              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden md:flex"
+              data-aos="zoom-in"
+              data-aos-delay={`${index * 100}`}
+            >
               <div className="blog-article-image md:w-64 h-48 md:h-auto">
                 <span>{articulo.imagen}</span>
               </div>

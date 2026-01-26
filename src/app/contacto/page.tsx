@@ -1,6 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Contacto() {
   const [formData, setFormData] = useState({
@@ -11,6 +13,15 @@ export default function Contacto() {
   })
 
   const [enviado, setEnviado] = useState(false)
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true,
+    })
+  }, [])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
@@ -27,7 +38,7 @@ export default function Contacto() {
   return (
     <div className="contacto-container">
       {/* Header */}
-     <div className="hero-gradient text-white py-12">
+     <div className="hero-gradient text-white py-12" data-aos="fade-down">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Contacto</h1>
           <p className="contacto-header-text">Te responderemos en la brevedad</p>
@@ -38,9 +49,9 @@ export default function Contacto() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Información de Contacto */}
-          <div className="lg:col-span-1 space-y-6">
+          <div className="lg:col-span-1 space-y-6" data-aos="fade-up">
             {/* Teléfono */}
-            <div className="bg-sky-100 rounded-lg shadow-md p-6">
+            <div className="bg-sky-100 rounded-lg shadow-md p-6" data-aos="zoom-in" data-aos-delay="0">
               <div className="text-3xl mb-4">📱</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Teléfono</h3>
               <p className="text-gray-600">+58 212 1234567</p>
@@ -48,7 +59,7 @@ export default function Contacto() {
             </div>
 
             {/* Email */}
-            <div className="bg-sky-100 rounded-lg shadow-md p-6">
+            <div className="bg-sky-100 rounded-lg shadow-md p-6" data-aos="zoom-in" data-aos-delay="100">
               <div className="text-3xl mb-4">✉️</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Correo Electrónico</h3>
               <p className="text-gray-600">info@cmdp.org</p>
@@ -56,7 +67,7 @@ export default function Contacto() {
             </div>
 
             {/* Dirección */}
-            <div className="bg-sky-100 rounded-lg shadow-md p-6">
+            <div className="bg-sky-100 rounded-lg shadow-md p-6" data-aos="zoom-in" data-aos-delay="200">
               <div className="text-3xl mb-4">📍</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Dirección</h3>
               <p className="text-gray-600">
@@ -69,7 +80,7 @@ export default function Contacto() {
             </div>
 
             {/* Horario */}
-            <div className="bg-sky-100 rounded-lg shadow-md p-6">
+            <div className="bg-sky-100 rounded-lg shadow-md p-6" data-aos="zoom-in" data-aos-delay="300">
               <div className="text-3xl mb-4">⏰</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Horario</h3>
               <p className="text-gray-600">
@@ -86,7 +97,7 @@ export default function Contacto() {
           </div>
 
           {/* Formulario de Contacto */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2" data-aos="fade-up" data-aos-delay="100">
             <div className="bg-white rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Envíanos un Mensaje</h2>
               
@@ -172,7 +183,7 @@ export default function Contacto() {
         </div>
 
         {/* Mapa (simulado) */}
-        <div className="mt-12 bg-white rounded-lg shadow-md overflow-hidden h-96">
+        <div className="mt-12 bg-white rounded-lg shadow-md overflow-hidden h-96" data-aos="zoom-in">
           <div className="w-full h-full bg-gray-200 flex items-center justify-center">
             <div className="text-center">
               <div className="text-6xl mb-4">🗺️</div>

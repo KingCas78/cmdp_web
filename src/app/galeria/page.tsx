@@ -1,69 +1,59 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Galeria() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true,
+    })
+  }, [])
 
   const fotos = [
     {
       id: 1,
       titulo: 'Congreso Nacional CMDP 2025',
-      descripcion: 'Asamblea general de dermatólogos pediatras de México',
-      fecha: 'Noviembre 2025',
+      descripcion: 'XIV Congreso Nacional de Dermatología Pediátrica',
+      fecha: 'Octubre 2025',
       emoji: '👥'
     },
     {
       id: 2,
-      titulo: 'Conferencia Magistral: Dr. Internacional',
-      descripcion: 'Experto en dermatología pediátrica presentando últimas investigaciones',
-      fecha: 'Octubre 2025',
+      titulo: 'Congreso Nacional CMDP 2024',
+      descripcion: 'XIII Congreso Nacional de Dermatología Pediátrica',
+      fecha: 'Octubre 2024',
       emoji: '🎤'
     },
     {
       id: 3,
-      titulo: 'Taller Práctico de Dermatoscopía',
-      descripcion: 'Sesión de capacitación en técnicas de diagnóstico dermatoscópico',
-      fecha: 'Septiembre 2025',
+      titulo: 'Congreso Nacional CMDP 2023',
+      descripcion: 'XII Congreso Nacional de Dermatología Pediátrica',
+      fecha: 'Octubre 2023',
       emoji: '🔍'
     },
-    {
-      id: 4,
-      titulo: 'Mesa Redonda: Casos Clínicos Desafiantes',
-      descripcion: 'Discusión colaborativa entre especialistas sobre casos complejos',
-      fecha: 'Agosto 2025',
-      emoji: '💡'
-    },
-    {
-      id: 5,
-      titulo: 'Ceremonia de Incorporación de Nuevos Miembros',
-      descripcion: 'Bienvenida a nuevos dermatólogos pediatras al colegio',
-      fecha: 'Julio 2025',
-      emoji: '🎓'
-    },
-    {
-      id: 6,
-      titulo: 'Taller de Dermocosmética Pediátrica',
-      descripcion: 'Productos y procedimientos seguros en menores',
-      fecha: 'Junio 2025',
-      emoji: '💄'
-    }
   ]
 
   return (
     <div className="min-h-screen page-bg">
       {/* Header */}
-      <div className="hero-gradient text-white py-12">
+      <div className="hero-gradient text-white py-12" data-aos="fade-down">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Galería Fotográfica</h1>
-          <p className="text-green-100 mt-2">Momentos destacados de nuestras actividades</p>
+          <p className="page-header-text mt-2">Momentos destacados del los congresos nacionales</p>
         </div>
       </div>
 
       {/* Contenido */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Filtros */}
-        <div className="flex gap-3 mb-8 overflow-x-auto pb-2">
+        <div className="flex gap-3 mb-8 overflow-x-auto pb-2" data-aos="fade-up">
           <button className="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 whitespace-nowrap">
             Todas
           </button>
@@ -79,12 +69,14 @@ export default function Galeria() {
         </div>
 
         {/* Grid de Fotos */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {fotos.map((foto) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-in">
+          {fotos.map((foto, index) => (
             <div
               key={foto.id}
               onClick={() => setSelectedImage(foto.id)}
               className="cursor-pointer group"
+              data-aos="zoom-in"
+              data-aos-delay={`${(index % 3) * 100}`}
             >
               <div className="bg-gradient-to-br from-green-400 to-green-600 rounded-lg overflow-hidden h-48 flex items-center justify-center relative">
                 <span className="text-6xl">{foto.emoji}</span>
@@ -109,8 +101,9 @@ export default function Galeria() {
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-50"
           onClick={() => setSelectedImage(null)}
+          data-aos="fade-in"
         >
-          <div className="bg-white rounded-lg max-w-2xl w-full p-6" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-white rounded-lg max-w-2xl w-full p-6" onClick={(e) => e.stopPropagation()} data-aos="zoom-in">
             <button
               onClick={() => setSelectedImage(null)}
               className="float-right text-gray-600 hover:text-gray-900 text-2xl"

@@ -1,13 +1,25 @@
 'use client'
 
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default function Webinars() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true,
+    })
+  }, [])
   const webinars = [
     {
       id: 1,
       titulo: 'Trabajos de ingreso',
       fecha: '26 de Enero 2026',
       hora: '8:30 PM',
-      descripcion: 'Título del trabajo de igreso',
+      descripcion: 'Título del trabajo de ingreso',
       disertante: 'Candidato de trabajo de ingreso',
       estado: 'Próximo'
     },
@@ -25,7 +37,7 @@ export default function Webinars() {
       titulo: 'Trabajos de ingreso',
       fecha: '23 de febrero 2026',
       hora: '8:30 AM',
-      descripcion: 'Título del trabajo de igreso',
+      descripcion: 'Título del trabajo de ingreso',
       disertante: 'Candidato de trabajo de ingreso',
       estado: 'Próximo'
     },
@@ -43,12 +55,35 @@ export default function Webinars() {
   return (
     <div className="webinars-container">
       {/* Header */}
-      <div className="hero-gradient text-white py-12">
+      <div className="hero-gradient text-white py-12" data-aos="fade-down">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold">Webinars</h1>
           <p className="webinars-header-text">Educación Continua en Dermatología Pediátrica</p>
         </div>
       </div>
+
+      {/* Transmisión en Vivo */}
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <h2 className="text-4xl font-bold mb-12 text-center section-title" data-aos="fade-up">Transmisión en Vivo</h2>
+        
+        <div className="flex justify-center" data-aos="zoom-in">
+          <div className="rounded-lg overflow-hidden shadow-lg w-full max-w-4xl">
+            <div className="video-responsive">
+              <iframe 
+                src="https://vimeo.com/event/5684981/embed/interaction" 
+                frameBorder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; encrypted-media; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
+                title="Transmisión en Vivo CMDP"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Divider */}
+      <div className="footer-divider"></div>
 
       {/* Contenido */}
       <div className="max-w-7xl mx-auto px-4 py-12">

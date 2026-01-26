@@ -485,4 +485,22 @@
   transform: translateY(0);
 }
 
+/* Video Container Styles */
+.video-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive .vimeo-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
