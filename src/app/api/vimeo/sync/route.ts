@@ -1,5 +1,7 @@
 import { supabaseServer } from '@/lib/supabase-server'
 
+export const dynamic = 'force-dynamic'
+
 const VIMEO_API = 'https://api.vimeo.com'
 
 async function getAllVideos(folderId: string) {

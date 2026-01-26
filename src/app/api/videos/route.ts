@@ -1,5 +1,7 @@
 import { supabaseServer } from '@/lib/supabase-server'
 
+export const dynamic = 'force-dynamic'
+
 interface Video {
   id: string
   title: string
