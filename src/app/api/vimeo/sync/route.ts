@@ -100,6 +100,13 @@ export async function POST() {
       });
     }
 
+    if (!supabaseServer) {
+      return Response.json(
+        { error: 'Database not available' },
+        { status: 503 }
+      );
+    }
+
     const { error } = await supabaseServer
       .from('vimeo_videos')
       .upsert(formatted, { onConflict: 'id' });

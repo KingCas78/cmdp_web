@@ -1,5 +1,7 @@
 import { supabaseServer } from '@/lib/supabase-server'
 
+export const dynamic = 'force-dynamic'
+
 export async function POST(req: Request) {
   try {
     const body = await req.json()
@@ -24,6 +26,13 @@ export async function POST(req: Request) {
     }))
 
     // Insertar o actualizar videos en videoteca_videos
+    if (!supabaseServer) {
+      return Response.json(
+        { error: 'Database not available' },
+        { status: 503 }
+      );
+    }
+
     const { error } = await supabaseServer
       .from('videoteca_videos')
       .upsert(formatted, { onConflict: 'id' })

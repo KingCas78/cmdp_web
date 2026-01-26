@@ -74,6 +74,13 @@ export async function POST() {
     }))
 
     // Insertar en videoteca_videos
+    if (!supabaseServer) {
+      return Response.json(
+        { error: 'Database not available' },
+        { status: 503 }
+      );
+    }
+
     const { error } = await supabaseServer
       .from('videoteca_videos')
       .upsert(formatted, { onConflict: 'id' })

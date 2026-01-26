@@ -14,6 +14,13 @@ interface Video {
 
 export async function GET() {
   try {
+    if (!supabaseServer) {
+      return Response.json(
+        { error: 'Database not available' },
+        { status: 503 }
+      )
+    }
+
     const { data, error } = await supabaseServer
       .from('vimeo_videos')
       .select('*')
