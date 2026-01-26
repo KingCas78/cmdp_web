@@ -5,8 +5,14 @@ const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 // Log para debugging
 if (typeof window === 'undefined') {
+  console.log('[Supabase Server] Debug:', {
+    supabaseUrl: supabaseUrl || 'NOT SET',
+    hasKey: !!supabaseServiceRoleKey,
+    keyLength: supabaseServiceRoleKey?.length || 0
+  });
+  
   if (!supabaseUrl || !supabaseServiceRoleKey) {
-    console.warn('[Supabase] Variables de entorno no disponibles:', {
+    console.error('[Supabase] Variables de entorno no disponibles:', {
       hasUrl: !!supabaseUrl,
       hasKey: !!supabaseServiceRoleKey,
     });
