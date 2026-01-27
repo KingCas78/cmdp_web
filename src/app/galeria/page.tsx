@@ -29,7 +29,8 @@ export default function Galeria() {
       titulo: 'Congreso Nacional CMDP 2024',
       descripcion: 'XIII Congreso Nacional de Dermatología Pediátrica',
       fecha: 'Octubre 2024',
-      emoji: '🎤'
+      emoji: '🎤',
+      galeriaUrl: 'https://photos.app.goo.gl/u3QsbPw3j4ZMu9nF8'
     },
     {
       id: 3,
@@ -73,7 +74,7 @@ export default function Galeria() {
           {fotos.map((foto, index) => (
             <div
               key={foto.id}
-              onClick={() => setSelectedImage(foto.id)}
+              onClick={() => foto.galeriaUrl ? window.open(foto.galeriaUrl, '_blank') : setSelectedImage(foto.id)}
               className="cursor-pointer group"
               data-aos="zoom-in"
               data-aos-delay={`${(index % 3) * 100}`}
@@ -82,7 +83,7 @@ export default function Galeria() {
                 <span className="text-6xl">{foto.emoji}</span>
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all flex items-center justify-center">
                   <button className="opacity-0 group-hover:opacity-100 bg-white text-green-600 px-4 py-2 rounded-lg font-semibold transition-opacity">
-                    Ver Más
+                    {foto.galeriaUrl ? 'Ver Galería' : 'Ver Más'}
                   </button>
                 </div>
               </div>
