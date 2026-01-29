@@ -22,7 +22,7 @@ export default function Galeria() {
       titulo: 'Congreso Nacional CMDP 2025',
       descripcion: 'XIV Congreso Nacional de Dermatología Pediátrica',
       fecha: 'Octubre 2025',
-      emoji: '👥'
+      galeriaUrl: 'https://photos.app.goo.gl/gweTWzxChi7XcL5v7'
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ export default function Galeria() {
       titulo: 'Congreso Nacional CMDP 2023',
       descripcion: 'XII Congreso Nacional de Dermatología Pediátrica',
       fecha: 'Octubre 2023',
-      emoji: '🔍'
+     galeriaUrl: 'https://photos.app.goo.gl/UQWmMTboo764i9g47'
     },
   ]
 
